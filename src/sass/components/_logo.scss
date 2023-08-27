@@ -1,0 +1,22 @@
+.logo__title {
+  font-family: var(--secondary-font-family), serif;
+  font-size: 35px;
+  font-weight: normal;
+  background: var(--shine-gold-background);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s infinite;
+  background-size: 100%;
+  background-position: left;
+
+  &:hover,
+  &:focus {
+    background-size: 270%;
+    animation: shine 1s infinite;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 50px;
+  }
+}

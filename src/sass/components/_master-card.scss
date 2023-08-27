@@ -1,0 +1,38 @@
+.master-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+}
+
+.master-card__img-container {
+  position: relative;
+  width: 100%;
+  height: 120%;
+  padding-top: 120%; /* 1:1.2 Aspect Ratio */
+  overflow: hidden;
+}
+
+.master-card__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+.master-card__title {
+  font-size: 28px;
+  background-image: url(../images/backgrounds/gold-structure.webp);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.master-card__article {
+  padding: 0 10px 0 10px;
+  text-align: center;
+  font-size: 16px;
+}

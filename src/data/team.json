@@ -1,0 +1,213 @@
+[
+  {
+    "name": "Iryna Volfova",
+    "specialization": "Majitelka studia, <br/> kadeřník-stylista",
+    "photo": "volfova",
+    "contacts": { "phone": "+420773939303", "email": "" },
+    "socials": { "fb": "", "instagram": "", "tiktok": "" },
+    "price_list": {
+      "kadern_sluzby": {
+        "name": "Kadeřnické služby",
+        "services": [
+          { "name": "Dámský střih (kompletní služba)", "price": "od 650" },
+          { "name": "Foukaná", "price": "od 450" },
+          { "name": "Barva + střih", "price": "od 1400" },
+          { "name": "Melír", "price": "od 1200" },
+          { "name": "Balayage", "price": "od 2500" },
+          { "name": "Airtouch", "price": "od 2500" },
+          { "name": "Dekolorace (stahování barvy)", "price": "od 1200" },
+          { "name": "Ošetření \"RESTRUCTURE\"", "price": "800" },
+          {
+            "name": "Smoothing system (nová metoda vyhlazení vlasů)",
+            "price": "od 1900"
+          },
+          { "name": "Pánský střih", "price": "400" },
+          { "name": "Dětský střih", "price": "300" }
+        ]
+      }
+    },
+    "other": "*Ceny jsou orientační, odvíjí se od spotřeby materiálu."
+  },
+  {
+    "name": "Valentýna Bondar",
+    "specialization": "Kadeřnice",
+    "photo": "bondar",
+    "contacts": { "phone": "+420603963301", "email": "" },
+    "socials": { "fb": "", "instagram": "", "tiktok": "" },
+    "price_list": {
+      "kadern_sluzby": {
+        "name": "Kadeřnické služby",
+        "services": [
+          { "name": "Dámský střih (kompletní služba)", "price": "od 600" },
+          { "name": "Foukaná", "price": "od 450" },
+          { "name": "Barva", "price": "od 650" },
+          { "name": "Melír", "price": "od 1100" },
+          { "name": "Balayage", "price": "od 2500" },
+          { "name": "Airtouch", "price": "od 2500" },
+
+          { "name": "Dekolorace (stahování barvy)", "price": "od 1200" },
+          { "name": "Pánský střih", "price": "od 500" },
+          { "name": "Dětský střih (děti do 6 let)", "price": "300" }
+        ]
+      }
+    },
+    "other": "*Ceny jsou orientační, odvíjí se od spotřeby materiálu."
+  },
+  {
+    "name": "Naina Hontar",
+    "specialization": "Kadeřník-kolorista",
+    "photo": "hontar",
+    "contacts": { "phone": "+420776274140", "email": "" },
+    "socials": { "fb": "", "instagram": "", "tiktok": "" },
+    "price_list": {
+      "kadern_sluzby": {
+        "name": "Kadeřnické služby",
+        "services": [
+          { "name": "Dámský střih (kompletní služba)", "price": "od 650" },
+          { "name": "Foukaná", "price": "od 450" },
+          { "name": "Barva", "price": "od 700" },
+          { "name": "Melír", "price": "od 1100" },
+          { "name": "Balayage", "price": "od 2500" },
+          { "name": "Airtouch", "price": "od 2500" },
+          { "name": "Dekolorace (stahování barvy)", "price": "od 1200" },
+          {
+            "name": "Ošetření \"Experience Reconstruct\"",
+            "price": "od 800"
+          },
+          { "name": "Pánský střih", "price": "500" },
+          { "name": "Dětský střih (děti do 10 let)", "price": "300" }
+        ]
+      }
+    },
+    "other": "*Ceny jsou orientační, odvíjí se od spotřeby materiálu."
+  },
+  {
+    "name": "Iveta Janečková",
+    "specialization": "Kadeřnice",
+    "photo": "janeckova",
+    "contacts": { "phone": "+420737335868", "email": "" },
+    "socials": { "fb": "", "instagram": "", "tiktok": "" },
+    "price_list": {
+      "kadern_sluzby": {
+        "name": "Kadeřnické služby",
+        "services": [
+          { "name": "Dámský střih (kompletní služba)", "price": "od 650" },
+          { "name": "Foukaná", "price": "od 450" },
+          { "name": "Barva", "price": "od 650" },
+          { "name": "Melír", "price": "od 1100" },
+          { "name": "Balayage", "price": "od 2500" },
+          { "name": "Airtouch", "price": "od 2000" },
+          { "name": "Dekolorace (stahování barvy)", "price": "od 1200" },
+          { "name": "Pánský střih", "price": "od 350" },
+          { "name": "Dětský střih (děti do 6 let)", "price": "250" }
+        ]
+      }
+    },
+    "other": "*Ceny jsou orientační, odvíjí se od spotřeby materiálu."
+  },
+  {
+    "name": "Anna Khotynenko",
+    "specialization": "Mistr permanentního make-upu <br/> a tetování",
+    "photo": "khotynenko",
+    "contacts": { "phone": "+420776813942", "email": "" },
+    "socials": {
+      "fb": "",
+      "instagram": "https://www.instagram.com/tuningbrows/",
+      "tiktok": ""
+    },
+    "price_list": {
+      "perm_makeup": {
+        "name": "Permanentní make-up",
+        "services": [
+          { "name": "Obočí Magic Shading", "price": "4000" },
+          { "name": "Kombinovaná technika obočí", "price": "4000" },
+          {
+            "name": "Stinovaci oční linka Smoke eyeliner",
+            "price": "4000-5000"
+          },
+          { "name": "Meziřasová oční linka", "price": "3000" },
+          { "name": "Lips Natural", "price": "4500" },
+          { "name": "Lips Intensive - efekt rtěnky", "price": "4500-5000" },
+          { "name": "Obočí - předělávky nepovedeného PMU*", "price": "5000" },
+          { "name": "Korekce PMU do 3 měsíců", "price": "1500" },
+          { "name": "Korekce PMU od 3 měsíců do 6 měsíců", "price": "2000" },
+          { "name": "Korekce PMU 7 měsíců do roku a půl", "price": "2000" },
+          {
+            "name": "Obnova PMU / oživení barev pigmentů",
+            "price": "3000 (25% sleva z aktuálního ceníku)"
+          },
+          { "name": "Odstranění nežádoucího PMU REMOVALEM", "price": "1500" }
+        ]
+      },
+      "depilace": {
+        "name": "Depilace",
+        "services": [{ "name": "Depilace", "price": "ceník na vyžádání" }]
+      }
+    },
+    "other": "*PMU - permanentní make-up"
+  },
+  {
+    "name": "Tetiana Trach",
+    "specialization": "Nezávislá kosmetická poradkyně, <br/> vizážistka společnosti \"Mary Kay\"",
+    "photo": "trach",
+    "contacts": { "phone": "+420774049282", "email": "" },
+    "socials": { "fb": "", "instagram": "", "tiktok": "" },
+    "price_list": {
+      "kosm_konsultace": {
+        "name": "Kosmetické konzultace",
+        "services": [
+          { "name": "Kosmetická konzultace", "price": "ceník na vyžádání" }
+        ]
+      }
+    },
+    "other": ""
+  },
+  {
+    "name": "Ilona Pecinova",
+    "specialization": "Prodlužování vlasů, <br/> kadeřnické služby",
+    "photo": "pecinova",
+    "contacts": { "phone": "+420733167557", "email": "" },
+    "socials": {
+      "fb": "https://www.facebook.com/goodhaircz",
+      "instagram": "https://www.instagram.com/goodhaircz/",
+      "tiktok": "https://www.tiktok.com/@goodhaircz?fbclid=IwAR2S4UqNfsk6CvdVWbmlwVffHyxQsUtTi_xIHS0Nd7CTsERcUijiIqaMGVs"
+    },
+    "price_list": {
+      "kadern_sluzby": {
+        "name": "Kadeřnické služby",
+        "services": [
+          {
+            "name": "Kadeřnické služby",
+            "price": "ceník na vyžádání"
+          },
+          {
+            "name": "Prodlužování vlasů Goodhair",
+            "price": "ceník na vyžádání"
+          }
+        ]
+      }
+    },
+    "other": ""
+  },
+  {
+    "name": "Elena Bocan",
+    "specialization": "Kadeřnice",
+    "photo": "bocan",
+    "contacts": { "phone": "+420774074606", "email": "" },
+    "socials": { "fb": "", "instagram": "", "tiktok": "" },
+    "price_list": {
+      "kadern_sluzby": {
+        "name": "Kadeřnické služby",
+        "services": [
+          { "name": "Dámský střih (kompletní služba)", "price": "od 650" },
+          { "name": "Foukaná", "price": "od 450" },
+          { "name": "Barva + střih", "price": "od 1300" },
+          { "name": "Melír", "price": "od 1200 až 2500" },
+          { "name": "Pánský střih", "price": "500" },
+          { "name": "Dětský střih (do 10 let)", "price": "300" }
+        ]
+      }
+    },
+    "other": "*Ceny jsou orientační, odvíjí se od spotřeby materiálu."
+  }
+]

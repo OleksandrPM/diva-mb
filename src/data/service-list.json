@@ -1,0 +1,88 @@
+{
+  "kadern_sluzby": {
+    "name": "Kadeřnické služby",
+    "services": [
+      {
+        "name": "Dámský střih (kompletní služba)",
+        "price": "od 650 Kč"
+      },
+      {
+        "name": "Foukaná",
+        "price": "od 450 Kč"
+      },
+      {
+        "name": "Barva + střih",
+        "price": "od 1350 Kč"
+      },
+      {
+        "name": "Melír",
+        "price": "od 1100 Kč"
+      },
+      {
+        "name": "Balayage",
+        "price": "od 2500 Kč"
+      },
+      {
+        "name": "Airtouch",
+        "price": "od 2500 Kč"
+      },
+      {
+        "name": "Dekolorace (stahování barvy)",
+        "price": "od 1200 Kč"
+      },
+      {
+        "name": "Ošetření \"RESTRUCTURE\"",
+        "price": "od 1100 Kč"
+      },
+      {
+        "name": "Smoothing system (nová metoda vyhlazení vlasů)",
+        "price": "1550 Kč"
+      },
+      {
+        "name": "Pánský střih",
+        "price": "od 400 Kč"
+      },
+      {
+        "name": "Dětský střih (do 10 let)",
+        "price": "od 250 Kč"
+      },
+      {
+        "name": "Prodlužování vlasů",
+        "price": "ceník na vyžádání"
+      }
+    ]
+  },
+  "perm_makeup": {
+    "name": "Permanentní make-up",
+    "services": [
+      { "name": "Obočí Magic Shading", "price": "4000 Kč" },
+      { "name": "Kombinovaná technika obočí", "price": "4000 Kč" },
+      {
+        "name": "Stinovaci oční linka Smoke eyeliner",
+        "price": "4000-5000 Kč"
+      },
+      { "name": "Meziřasová oční linka", "price": "3000 Kč" },
+      { "name": "Lips Natural", "price": "4500 Kč" },
+      { "name": "Lips Intensive - efekt rtěnky", "price": "4500-5000 Kč" },
+      { "name": "Obočí - předělávky nepovedeného PMU*", "price": "5000 Kč" },
+      { "name": "Korekce PMU do 3 měsíců", "price": "1500 Kč" },
+      { "name": "Korekce PMU od 3 měsíců do 6 měsíců", "price": "2000 Kč" },
+      { "name": "Korekce PMU 7 měsíců do roku a půl", "price": "2000 Kč" },
+      {
+        "name": "Obnova PMU / oživení barev pigmentů",
+        "price": "3000 Kč (25% sleva z aktuálního ceníku)"
+      },
+      { "name": "Odstranění nežádoucího PMU REMOVALEM", "price": "1500 Kč" }
+    ]
+  },
+  "depilace": {
+    "name": "Depilace",
+    "services": [{ "name": "Depilace", "price": "ceník na vyžádání" }]
+  },
+  "kosm_konsultace": {
+    "name": "Kosmetické konzultace",
+    "services": [
+      { "name": "Kosmetická konzultace", "price": "ceník na vyžádání" }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+.advertising {
+  position: fixed;
+  display: none;
+  right: 5vw;
+  bottom: 5vh;
+  width: 90vw;
+  padding: 10px;
+
+  color: black;
+  background-color: rgb(205, 204, 204);
+  border-radius: 10px;
+
+  @media screen and (min-width: 768px) {
+    width: 40vw;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 25vw;
+    font-size: x-large;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(205, 204, 204);
+
+    &:hover,
+    &:focus {
+      background-color: black;
+      fill: aliceblue;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

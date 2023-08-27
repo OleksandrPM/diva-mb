@@ -1,0 +1,14 @@
+.button {
+  padding: 5 10;
+  color: var(--main-text-color);
+  background-color: var(--background-color);
+  border-radius: 5px;
+  border: none;
+
+  &:hover,
+  &:focus {
+    color: rgba(249, 244, 180, 1);
+    box-shadow: 0 0 5px rgba(249, 244, 180, 1);
+    text-shadow: 0 0 5px rgba(249, 244, 180, 1);
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="DIVA - studio krásy. Kadeřnické služby, prodlužování vlasů, permanentní make-up, kosmetické poradenství v Mlada Boleslav, Mnichovo Hradiště, Bakov Nad Jizerou, Michalovice, Debř, Benátky Nad Jizerou, Řepov."
+    />
+
+    <title>DIVA studio krásy</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./images/favicon/golden_scissors.png" />
+
+    <!-- Local Styles -->
+    <link rel="stylesheet" href="./sass/index.scss" />
+  </head>
+
+  <body class="scrollable">
+    <include src="./partials/header.html"></include>
+    <main>
+      <include src="./partials/hero.html"></include>
+      <include src="./partials/about.html"></include>
+      <include src="./partials/team.html"></include>
+      <include src="./partials/gallery.html"></include>
+      <include src="./partials/cooperation.html"></include>
+      <include src="./partials/contacts.html"></include>
+    </main>
+    <include src="./partials/footer.html"></include>
+
+    <!-- Mobile menu -->
+    <include src="./partials/mobile-menu.html"></include>
+
+    <!-- Modal window -->
+    <include src="./partials/modal.html"></include>
+
+    <!-- Advertising block -->
+    <include src="./partials/advertising-block.html"></include>
+
+    <!-- IMPORTS OF SCRIPTS -->
+    <!-- Clicks listener -->
+    <script type="module" src="./js/body-click.js" defer async></script>
+
+    <!-- Scroll listener -->
+    <script type="module" src="./js/window-scroll.js" defer async></script>
+
+    <!-- Team render -->
+    <script type="module" src="./js/team.js" defer async></script>
+
+    <!-- Portfolio render -->
+    <script type="module" src="./js/gallery.js" defer async></script>
+
+    <!-- Advertising block -->
+    <script type="module" src="./js/advertising.js" defer async></script>
+  </body>
+</html>

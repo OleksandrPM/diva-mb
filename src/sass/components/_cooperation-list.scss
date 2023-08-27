@@ -1,0 +1,45 @@
+.cooperation__list {
+  display: flex;
+  column-gap: 10%;
+  row-gap: 20px;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    column-gap: 5%;
+    row-gap: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    column-gap: 2%;
+    flex-wrap: nowrap;
+  }
+}
+
+.cooperation__item {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    width: 30%;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 5px #ffee10;
+  }
+}
+
+.cooperation__link {
+  width: 100%;
+}
+
+.cooperation__img {
+  width: 100%;
+}

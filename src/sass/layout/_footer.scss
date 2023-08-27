@@ -1,0 +1,35 @@
+footer {
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  border: 1px solid rgba(249, 244, 180, 1);
+  border-radius: 8px 8px 0px 0px;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+
+  & .container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-size: 12px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 12px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 20px;
+    }
+  }
+
+  & a:hover,
+  & a:focus {
+    color: rgba(249, 244, 180, 1);
+    text-shadow: 0 0 5px rgba(249, 244, 180, 1);
+  }
+}

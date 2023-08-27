@@ -1,0 +1,78 @@
+.contacts__block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  & .map-link {
+    display: block;
+    width: 100%;
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    @media screen and (min-width: 768px) {
+      width: 45%;
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 5px rgba(249, 244, 180, 1);
+    }
+
+    & img {
+      width: 100%;
+    }
+  }
+}
+
+.contacts__content {
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  & address {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 18px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+  }
+
+  & h3 {
+    margin-bottom: 10px;
+
+    font-size: larger;
+
+    background-image: url(../images/backgrounds/gold-structure.webp);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    @media screen and (min-width: 768px) {
+      font-size: 22px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 20px;
+      font-size: 26px;
+    }
+  }
+
+  & .socials {
+    justify-content: center;
+  }
+}
