@@ -53,12 +53,12 @@ function buildShowMoreBtn(key) {
       title="info & ceny"
       type="button"
     >
-      <svg class="services__show-more-icon js-services-show-more active" 
+      <svg class="services__show-more-icon unclick active" 
       data-service="${key}"
       width="28" height="28">
         <use href=${icons}#icon-plus></use>
       </svg>
-      <svg class="services__show-more-icon js-services-show-more" 
+      <svg class="services__show-more-icon unclick" 
       data-service="${key}"
       width="28" height="28">
         <use href=${icons}#icon-minus></use>

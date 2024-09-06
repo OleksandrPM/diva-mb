@@ -1,12 +1,12 @@
-import { nanoid } from 'nanoid';
+import { nanoid } from "nanoid";
 import {
   teamDefPhotos,
   teamNormPhotos,
   teamRetinaPhotos,
-} from '../images/team';
-import avatar from '../images/team/girl-profile.png';
-import icons from '../images/icons.svg';
-import { buildSocialsList } from './socials-icons';
+} from "../images/team";
+import avatar from "../images/team/girl-profile.png";
+import icons from "../images/icons.svg";
+import { buildSocialsList } from "./socials-icons";
 
 export default function buildMasterContainer(master) {
   const {
@@ -56,7 +56,7 @@ function buildPriceList(master, id) {
   const services = Object.keys(priceList);
 
   const pricesMarkup = services
-    .map(service => {
+    .map((service) => {
       const { name, services } = priceList[service];
       return `<h3 class="price-list__title">${name}</h3>
       <table>
@@ -67,11 +67,11 @@ function buildPriceList(master, id) {
           .map(({ name, price }) => {
             return `<tr><td>${name}</td><td>${price}</td></tr>`;
           })
-          .join('')}
+          .join("")}
         </tbody>
       </table>`;
     })
-    .join('');
+    .join("");
 
   return `<div class="price-list scrollable" data-id="${id}">
   ${pricesMarkup}
@@ -87,7 +87,7 @@ function buildCallmeBtn(phone) {
     </svg>
     </a>`;
   } else {
-    return '';
+    return "";
   }
 }
 
@@ -98,12 +98,12 @@ function buildShowMoreBtn(id) {
   data-id="${id}" 
   title="zobrazit informace">
   <span class="show-more__text js-show-more" data-id="${id}">Info a ceny</span>
-  <svg class="show-more__icon js-show-more" data-id="${id}" viewBox="0 0 32 32" width="20" height="20" >
-    <use href="${icons}#icon-up-arrow" class="js-show-more"></use>
+  <svg class="show-more__icon unclick" data-id="${id}" viewBox="0 0 32 32" width="20" height="20" >
+    <use href="${icons}#icon-up-arrow"></use>
     </svg>
   </button>`;
 }
 
 function getPhotoIndex(photoName, photos) {
-  return photos.findIndex(photo => photo.toString().includes(photoName));
+  return photos.findIndex((photo) => photo.toString().includes(photoName));
 }
