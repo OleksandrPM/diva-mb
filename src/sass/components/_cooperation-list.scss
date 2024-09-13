@@ -4,12 +4,12 @@
   row-gap: 20px;
   flex-wrap: wrap;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-width) {
     column-gap: 5%;
     row-gap: 30px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop-width) {
     column-gap: 2%;
     flex-wrap: nowrap;
   }
@@ -26,13 +26,19 @@
   border-radius: 10px;
   overflow: hidden;
 
-  @media screen and (min-width: 768px) {
+  transition-duration: $normal-transition-duration;
+  transition-timing-function: $normal-transition-timing-function;
+  transition-property: box-shadow, transform;
+
+  @media screen and (min-width: $tablet-width) {
     width: 30%;
   }
 
   &:hover,
-  &:focus {
-    box-shadow: 0 0 5px #ffee10;
+  &:focus,
+  &:active {
+    box-shadow: 0 0 5px $active-color;
+    transform: translateY(1.5);
   }
 }
 

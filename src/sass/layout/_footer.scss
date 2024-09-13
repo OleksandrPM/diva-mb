@@ -2,7 +2,7 @@ footer {
   padding-top: 5px;
   padding-bottom: 5px;
 
-  border: 1px solid rgba(249, 244, 180, 1);
+  border: 1px solid $active-color;
   border-radius: 8px 8px 0px 0px;
   border-bottom: none;
   border-left: none;
@@ -18,18 +18,23 @@ footer {
 
     font-size: 12px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet-width) {
       font-size: 12px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $desktop-width) {
       font-size: 20px;
     }
   }
 
-  & a:hover,
-  & a:focus {
-    color: rgba(249, 244, 180, 1);
-    text-shadow: 0 0 5px rgba(249, 244, 180, 1);
+  & a {
+    text-decoration: underline;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $active-color;
+      text-shadow: 0 0 5px $active-color;
+    }
   }
 }

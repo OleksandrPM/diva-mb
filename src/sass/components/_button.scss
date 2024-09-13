@@ -1,14 +1,50 @@
 .button {
-  padding: 5 10;
-  color: var(--main-text-color);
-  background-color: var(--background-color);
-  border-radius: 5px;
+  color: $main-text-color;
+  background-color: $main-background-color;
   border: none;
 
-  &:hover,
+  transition-duration: $normal-transition-duration;
+  transition-timing-function: $normal-transition-timing-function;
+  transition-property: color, box-shadow, text-shadow;
+
+  & svg {
+    fill: $main-text-color;
+
+    transition-duration: $normal-transition-duration;
+    transition-timing-function: $normal-transition-timing-function;
+    transition-property: fill, stroke;
+  }
+
   &:focus {
-    color: rgba(249, 244, 180, 1);
-    box-shadow: 0 0 5px rgba(249, 244, 180, 1);
-    text-shadow: 0 0 5px rgba(249, 244, 180, 1);
+    outline: 1px solid $active-color;
+  }
+
+  &:active {
+    color: $active-color;
+    box-shadow: 0 0 5px $active-color;
+    text-shadow: 0 0 5px $active-color;
+
+    & svg {
+      fill: $active-color;
+      stroke: $active-color;
+    }
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      color: $active-color;
+      box-shadow: 0 0 5px $active-color;
+      text-shadow: 0 0 5px $active-color;
+
+      & svg {
+        fill: $active-color;
+        stroke: $active-color;
+      }
+    }
+  }
+
+  &.book-btn {
+    padding: 5 10;
+    border-radius: 5px;
   }
 }

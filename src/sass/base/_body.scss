@@ -1,4 +1,4 @@
-@import '~node_modules/modern-normalize/modern-normalize.css';
+@import "~node_modules/modern-normalize/modern-normalize.css";
 
 html {
   scroll-behavior: smooth;
@@ -6,13 +6,13 @@ html {
 }
 
 body {
-  font-family: var(--main-font-family), sans-serif;
+  font-family: $main-normal-font;
   font-size: 14px;
-  color: var(--main-text-color);
-  background-color: var(--background-color);
+  color: $main-text-color;
+  background-color: $main-background-color;
 
   // Hidden scrollbar
-  @media screen and (max-width: 767.98px) {
+  @media screen and (max-width: calc($tablet-width - 0.02px)) {
     /* Hide scrollbar for IE, Edge and Firefox */
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
@@ -22,7 +22,4 @@ body {
       display: none;
     }
   }
-}
-
-main {
 }

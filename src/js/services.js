@@ -1,20 +1,20 @@
-import serviceList from '../data/service-list.json';
-import { modalContentEl } from './modal';
-import icons from '../images/icons.svg';
+import serviceList from "../data/service-list.json";
+import { modalContentEl } from "./modal";
+import icons from "../images/icons.svg";
 
-const servicesModalTitle = 'Vyberte službu:';
+const servicesModalTitle = "Vyberte službu:";
 
-const modalTitleEl = document.querySelector('.modal__title');
+const modalTitleEl = document.querySelector(".modal__title");
 
 export function renderServices() {
   modalTitleEl.textContent = servicesModalTitle;
   const serviceListKeys = Object.keys(serviceList);
   const items = serviceListKeys
-    .map(key => {
+    .map((key) => {
       const { name, services } = serviceList[key];
       return buildServiceItem(key, name, services);
     })
-    .join('');
+    .join("");
   const servicesList = `<ul class='services'>${items}</ul>`;
 
   modalContentEl.innerHTML = servicesList;
@@ -23,9 +23,9 @@ export function renderServices() {
 function buildServiceItem(key, name, services) {
   return `<li class='services__item' data-service="${key}">
             <div class="services__item-head">
-              <p class='service js-service-name' data-service="${key}">
+              <button type="button" class='service js-service-name' data-service="${key}">
               ${name}
-              </p>
+              </button>
               ${buildShowMoreBtn(key)}
             </div>
             ${buildPriceTable(key, services)}
@@ -41,7 +41,7 @@ function buildPriceTable(key, services) {
                   <td class="price-column">${price}</td>
                 </tr>`;
               })
-              .join('')}
+              .join("")}
             </tbody>
           </table>`;
 }
@@ -55,12 +55,12 @@ function buildShowMoreBtn(key) {
     >
       <svg class="services__show-more-icon unclick active" 
       data-service="${key}"
-      width="28" height="28">
+      width="32" height="32">
         <use href=${icons}#icon-plus></use>
       </svg>
       <svg class="services__show-more-icon unclick" 
       data-service="${key}"
-      width="28" height="28">
+      width="32" height="32">
         <use href=${icons}#icon-minus></use>
       </svg>
     </button>`;

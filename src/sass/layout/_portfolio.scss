@@ -4,17 +4,11 @@
   column-gap: 6%;
   row-gap: 20px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-width) {
     column-gap: 2%;
-    // row-gap: 20px;
   }
 
-  @media screen and (min-width: 768px) {
-    column-gap: 2%;
-    // row-gap: 20px;
-  }
-
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop-width) {
     column-gap: 2.667%;
     row-gap: 25px;
   }
@@ -26,17 +20,18 @@
   border-radius: 5px;
   overflow: hidden;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-width) {
     width: 32%;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop-width) {
     width: 23%;
   }
 
   &:hover,
-  &:focus {
-    box-shadow: 0 0 5px rgba(249, 244, 180, 1);
+  &:focus,
+  &:active {
+    box-shadow: 0 0 5px $active-color;
   }
 }
 
@@ -55,35 +50,37 @@
 }
 
 .simple-lightbox {
-  color: var(--main-text-color) !important;
-  background-color: rgba(0, 0, 0, 0.9);
+  color: $main-text-color !important;
+  background-color: rgba($main-background-color, 0.9);
 }
 
 .sl-close {
-  color: var(--main-text-color) !important;
+  color: $main-text-color !important;
 
   &:hover,
-  &:focus {
-    color: rgba(249, 244, 180, 1) !important;
-    text-shadow: 0 0 5px rgba(249, 244, 180, 1) !important;
+  &:focus,
+  &:active {
+    color: $active-color !important;
+    text-shadow: 0 0 5px $active-color !important;
   }
 }
 
 .sl-counter {
-  color: var(--main-text-color) !important;
+  color: $main-text-color !important;
 }
 
 .sl-next,
 .sl-prev {
-  color: var(--main-text-color) !important;
+  color: $main-text-color !important;
 
   &:hover,
-  &:focus {
-    color: rgba(249, 244, 180, 1) !important;
-    text-shadow: 0 0 5px rgba(249, 244, 180, 1) !important;
+  &:focus,
+  &:active {
+    color: $active-color !important;
+    text-shadow: 0 0 5px $active-color !important;
   }
 }
 
 .sl-caption {
-  color: var(--main-text-color) !important;
+  color: $main-text-color !important;
 }

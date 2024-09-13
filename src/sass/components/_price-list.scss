@@ -21,19 +21,14 @@
 
   & thead {
     text-align: center;
-    background-color: #262626;
+    background-color: $secondary-background-color;
     font-size: larger;
   }
 
   & td,
   & th {
-    border: 1px solid #dddddd;
-    // text-align: left;
+    border: 1px solid $table-border-color;
     padding: 8px;
-  }
-
-  & tbody tr:nth-child(odd) {
-    // background-color: #262626;
   }
 
   & .t-column-price {

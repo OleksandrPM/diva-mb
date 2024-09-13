@@ -1,67 +1,65 @@
+// Font-faces
 @font-face {
-  font-family: Roboto;
+  font-family: RobotoNormal;
   src: url(../fonts/Roboto-Regular.ttf);
   font-weight: normal;
 }
 
 @font-face {
-  font-family: Roboto;
+  font-family: RobotoBold;
   src: url(../fonts/Roboto-Bold.ttf);
   font-weight: bold;
 }
 
 @font-face {
-  font-family: EBGaramond;
+  font-family: EBGaramondNormal;
   src: url(../fonts/EBGaramond-Regular.ttf);
   font-weight: normal;
 }
 
 @font-face {
-  font-family: EBGaramond;
+  font-family: EBGaramondBold;
   src: url(../fonts/EBGaramond-Bold.ttf);
   font-weight: bold;
 }
 
-:root {
-  // breakpoints
-  --mobile-width: 375px;
-  --tablet-width: 768px;
-  --desktop-width: 1280px;
+// Breakpoints
+$mobile-width: 375px;
+$tablet-width: 768px;
+$desktop-width: 1280px;
 
-  // fonts
-  --main-font-family: 'Roboto', sans-serif;
-  --secondary-font-family: 'EBGaramond', serif;
-  --main-font-style: normal;
+// Fonts
+$main-normal-font: "RobotoNormal", sans-serif;
+$main-bold-font: "RobotoBold", sans-serif;
+$secondary-normal-font: "EBGaramondNormal", serif;
+$secondary-bold-font: "EBGaramondBold", serif;
 
-  // colors
-  --main-text-color: rgba(185, 160, 103, 1);
-  --inverse-text-color: #fcfcfc;
-  --accent-color: rgba(236, 172, 32, 1);
-  --background-color: #000000;
-  --button-text-color: #000000;
-  --button-text-inverse-color: #ffffff;
-  // --button-hover-color: #0a8817;
-  --address-text-color: #d6936d;
-  --work-time-color: #ababab;
-  --copyright-color: #7a7a7a;
-  // background color in inputs of product card
-  --background-input-color: rgba(248, 210, 78, 0.1);
+// Colors
+$main-text-color: rgb(185, 160, 103);
+$active-navlink-color: rgb(236, 172, 32);
+$active-color: rgb(249, 244, 180);
+$main-background-color: rgb(0, 0, 0);
+$modal-background-color: rgb(142, 140, 140);
+// tables
+$secondary-background-color: rgb(38, 38, 38);
+$table-border-color: rgb(221, 221, 221);
+// advertising block
+$ad-content-color: rgb(0, 0, 0);
+$ad-inverce-color: rgb(240, 248, 255);
+$ad-background-color: rgb(205, 204, 204);
 
-  --shine-gold-background: linear-gradient(
-    120deg,
-    rgba(186, 148, 62, 1) 0%,
-    rgba(221, 174, 80, 1) 20%,
-    rgba(186, 148, 62, 1) 39%,
-    rgba(249, 244, 180, 1) 50%,
-    rgba(186, 148, 62, 1) 60%,
-    rgba(221, 174, 80, 1) 80%,
-    rgba(186, 148, 62, 1) 100%
-  );
+// Backgrounds
+$shine-gold-background: linear-gradient(
+  120deg,
+  rgb(186, 148, 62) 0%,
+  rgb(221, 174, 80) 20%,
+  rgb(186, 148, 62) 39%,
+  rgb(249, 244, 180) 50%,
+  rgb(186, 148, 62) 60%,
+  rgb(221, 174, 80) 80%,
+  rgb(186, 148, 62) 100%
+);
 
-  // transitions
-  --normal-transition-duration: 250ms;
-  --normal-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-//Background for
-$sl-overlay-background: black !default;
+// transitions
+$normal-transition-duration: 250ms;
+$normal-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

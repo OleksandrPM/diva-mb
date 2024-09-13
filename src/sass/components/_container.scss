@@ -6,25 +6,25 @@
   padding-top: 20px;
   padding-bottom: 20px;
 
-  @media screen and (max-width: 374.98px) {
+  @media screen and (max-width: calc($mobile-width - 0.02px)) {
     width: 100%;
   }
 
   // Phone styles
-  @media screen and (min-width: 375px) {
-    width: var(--mobile-width);
+  @media screen and (min-width: $mobile-width) {
+    width: $mobile-width;
   }
 
   // Tablet styles
-  @media screen and (min-width: 768px) {
-    width: var(--tablet-width);
+  @media screen and (min-width: $tablet-width) {
+    width: $tablet-width;
     padding-left: 20px;
     padding-right: 20px;
   }
 
   // Desktop styles
-  @media screen and (min-width: 1280px) {
-    width: var(--desktop-width);
+  @media screen and (min-width: $desktop-width) {
+    width: $desktop-width;
   }
 }
 
@@ -39,11 +39,11 @@
   -webkit-background-clip: text;
   background-clip: text;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-width) {
     font-size: 32px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop-width) {
     font-size: 48px;
   }
 }

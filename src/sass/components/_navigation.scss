@@ -1,12 +1,12 @@
 .nav__list {
   display: flex;
 
-  @media screen and (max-width: 767.98px) {
+  @media screen and (max-width: calc($tablet-width - 0.02px)) {
     flex-direction: column;
     gap: 15px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-width) {
     width: 100%;
     flex-direction: row;
     align-items: center;
@@ -16,11 +16,11 @@
 
 .nav__item {
   text-align: center;
-  @media screen and (max-width: 767.98px) {
+  @media screen and (max-width: calc($tablet-width - 0.02px)) {
     width: 100%;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-width) {
     width: 15%;
   }
 }
@@ -29,7 +29,7 @@
   text-align: center;
   font-size: 2.5rem;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-width) {
     display: block;
     width: 100%;
     padding: 10 5;
@@ -37,33 +37,31 @@
     font-size: 12px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop-width) {
     font-size: 20px;
   }
 
   &.active {
-    @media screen and (max-width: 767.98px) {
-      color: rgba(236, 172, 32, 1);
-      // text-shadow: 0 0 5px #ffee10;
+    @media screen and (max-width: calc($tablet-width - 0.02px)) {
+      color: $active-navlink-color;
     }
 
-    @media screen and (min-width: 768px) {
-      color: rgba(236, 172, 32, 1);
-      box-shadow: 0 0 5px rgba(236, 172, 32, 1);
-      // text-shadow: 0 0 5px #ffee10;
+    @media screen and (min-width: $tablet-width) {
+      color: $active-navlink-color;
+      box-shadow: 0 0 5px $active-navlink-color;
     }
   }
   &:hover,
   &:focus {
-    @media screen and (max-width: 767.98px) {
-      color: rgba(249, 244, 180, 1);
-      text-shadow: 0 0 5px rgba(249, 244, 180, 1);
+    @media screen and (max-width: calc($tablet-width - 0.02px)) {
+      color: $active-color;
+      text-shadow: 0 0 5px $active-color;
     }
 
-    @media screen and (min-width: 768px) {
-      color: rgba(249, 244, 180, 1);
-      box-shadow: 0 0 5px rgba(249, 244, 180, 1);
-      text-shadow: 0 0 5px rgba(249, 244, 180, 1);
+    @media screen and (min-width: $tablet-width) {
+      color: $active-color;
+      box-shadow: 0 0 5px $active-color;
+      text-shadow: 0 0 5px $active-color;
     }
   }
 }

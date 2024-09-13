@@ -6,15 +6,15 @@
   width: 90vw;
   padding: 10px;
 
-  color: black;
-  background-color: rgb(205, 204, 204);
+  color: $ad-content-color;
+  background-color: $ad-background-color;
   border-radius: 10px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-width) {
     width: 40vw;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop-width) {
     width: 25vw;
     font-size: x-large;
   }
@@ -29,12 +29,18 @@
     right: 10px;
     border: none;
     border-radius: 50%;
-    background-color: rgb(205, 204, 204);
+    background-color: $ad-background-color;
+
+    transition-duration: $normal-transition-duration;
+    transition-timing-function: $normal-transition-timing-function;
+    transition-property: background-color, fill;
 
     &:hover,
-    &:focus {
-      background-color: black;
-      fill: aliceblue;
+    &:focus,
+    &:active {
+      background-color: $main-background-color;
+      fill: $ad-inverce-color;
+      outline: none;
     }
   }
 
@@ -42,5 +48,9 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+    & a {
+      text-decoration: underline;
+    }
   }
 }

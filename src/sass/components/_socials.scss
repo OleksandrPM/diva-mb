@@ -9,12 +9,14 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: var(--main-text-color);
+  background-color: $main-text-color;
 
   &:hover,
-  &:focus {
-    background-color: rgba(249, 244, 180, 1);
-    box-shadow: 0 0 5px rgba(249, 244, 180, 1);
+  &:focus,
+  &:active {
+    background-color: $active-color;
+    box-shadow: 0 0 5px $active-color;
+    outline: none;
   }
 }
 

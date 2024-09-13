@@ -7,20 +7,19 @@
   width: 100%;
   height: 100%;
 
-  background-color: var(--background-color);
+  background-color: $main-background-color;
 
   transform: translateX(100%);
-  transition: transform 250ms ease-in-out;
 
-  // transition-duration: var(--normal-transition-duration);
-  // transition-timing-function: var(--normal-transition-timing-function);
-  // transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+  transition-property: transform;
 
   &.mob-menu-open {
     transform: translateX(0);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-width) {
     display: none;
   }
 }
@@ -52,10 +51,9 @@
 }
 
 .close-menu-icon {
-  fill: var(--main-text-color);
+  fill: $main-text-color;
 
-  &:hover,
-  &:focus {
-    fill: rgba(249, 244, 180, 1);
-  }
+  transition-duration: $normal-transition-duration;
+  transition-timing-function: $normal-transition-timing-function;
+  transition-property: fill;
 }

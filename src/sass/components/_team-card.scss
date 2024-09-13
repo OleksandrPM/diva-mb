@@ -8,7 +8,7 @@
   padding-bottom: 70px;
 
   border-radius: 10px;
-  border-color: var(--main-text-color);
+  border-color: $main-text-color;
   border-style: solid;
   border-width: 1px;
   overflow: hidden;
@@ -21,15 +21,15 @@
     padding-top: 167%;
     overflow: hidden;
 
-    @media screen and (min-width: 375px) {
+    @media screen and (min-width: $mobile-width) {
       padding-top: 160%;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet-width) {
       padding-top: 160%;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $desktop-width) {
       padding-top: 169%;
     }
   }
@@ -68,11 +68,6 @@
   height: 50px;
   border-radius: 50%;
   padding: 0;
-
-  &:hover .phone-icon,
-  &:focus .phone-icon {
-    fill: rgba(249, 244, 180, 1);
-  }
 }
 
 .phone-icon {
@@ -80,8 +75,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  fill: var(--main-text-color);
 }
 
 .show-more__btn {
@@ -97,26 +90,17 @@
   padding-right: 20px;
   padding-top: 0;
   padding-bottom: 0;
+  border-radius: 5px;
 
-  font-weight: bold;
+  font-family: $main-bold-font;
 
-  &:hover,
-  &:focus {
-    fill: rgba(249, 244, 180, 1);
-  }
+  & .show-more__icon {
+    transition-duration: 300ms;
+    transition-timing-function: $normal-transition-timing-function;
+    transition-property: transform;
 
-  &:hover .show-more__icon,
-  &:focus .show-more__icon {
-    fill: rgba(249, 244, 180, 1);
-  }
-}
-
-.show-more__icon {
-  fill: var(--main-text-color);
-  transition-duration: 300ms;
-  transition-property: transform;
-
-  &.active {
-    transform: rotate(180deg);
+    &.active {
+      transform: rotate(180deg);
+    }
   }
 }

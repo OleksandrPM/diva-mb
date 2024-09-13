@@ -7,7 +7,7 @@
 
 .services__item {
   padding-left: 15px;
-  // padding-right: 15px;
+  padding-right: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
   border-style: solid;
@@ -24,16 +24,25 @@
 .service {
   padding-top: 10px;
   padding-bottom: 10px;
-
   font-size: 20px;
+  border: none;
+
+  color: inherit;
+  background-color: inherit;
 
   cursor: pointer;
 
+  transition-duration: $normal-transition-duration;
+  transition-timing-function: $normal-transition-timing-function;
+  transition-property: transform;
+
   &:hover,
-  &:focus {
-    color: rgba(249, 244, 180, 1);
-    text-shadow: 0 0 5px rgba(249, 244, 180, 1);
-    font-size: 21px;
+  &:focus,
+  &:active {
+    color: $active-color;
+    text-shadow: 0 0 5px $active-color;
+    transform: scaleY(1.2);
+    outline: none;
   }
 }
 
@@ -48,18 +57,13 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-53%, -53%);
   display: none;
 
-  stroke: var(--main-text-color);
+  stroke: $main-text-color;
 
   &.active {
     display: block;
-  }
-
-  &:hover,
-  &:focus {
-    stroke: rgba(249, 244, 180, 1);
   }
 }
 
@@ -78,7 +82,7 @@
     width: 100%;
 
     & tr:nth-child(odd) {
-      background-color: #262626;
+      background-color: $secondary-background-color;
     }
   }
 
@@ -97,8 +101,7 @@
 
   & td,
   & th {
-    border: 1px solid #dddddd;
-    // text-align: left;
+    border: 1px solid $table-border-color;
     padding: 8px;
   }
 }

@@ -3,25 +3,24 @@
     display: grid;
     grid-row-gap: 20px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet-width) {
       grid-template-columns: repeat(2, 1fr);
       grid-column-gap: 20px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $desktop-width) {
       grid-template-columns: repeat(4, 1fr);
-      // grid-template-rows: repeat(2, 1fr);
     }
   }
 
   & .team__item {
     width: 100%;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet-width) {
       width: 354px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $desktop-width) {
       width: 290px;
     }
   }

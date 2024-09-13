@@ -1,8 +1,7 @@
 .logo__title {
-  font-family: var(--secondary-font-family), serif;
+  font-family: $secondary-normal-font;
   font-size: 35px;
-  font-weight: normal;
-  background: var(--shine-gold-background);
+  background: $shine-gold-background;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -10,13 +9,18 @@
   background-size: 100%;
   background-position: left;
 
+  transition-duration: $normal-transition-duration;
+  transition-timing-function: $normal-transition-timing-function;
+  transition-property: background-size;
+
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     background-size: 270%;
     animation: shine 1s infinite;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop-width) {
     font-size: 50px;
   }
 }
