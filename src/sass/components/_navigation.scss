@@ -51,8 +51,8 @@
       box-shadow: 0 0 5px $active-navlink-color;
     }
   }
-  &:hover,
-  &:focus {
+
+  &:active {
     @media screen and (max-width: calc($tablet-width - 0.02px)) {
       color: $active-color;
       text-shadow: 0 0 5px $active-color;
@@ -62,6 +62,24 @@
       color: $active-color;
       box-shadow: 0 0 5px $active-color;
       text-shadow: 0 0 5px $active-color;
+    }
+  }
+
+  @media (hover: hover) {
+    &:hover,
+    &:focus {
+      outline: none;
+
+      @media screen and (max-width: calc($tablet-width - 0.02px)) {
+        color: $active-color;
+        text-shadow: 0 0 5px $active-color;
+      }
+
+      @media screen and (min-width: $tablet-width) {
+        color: $active-color;
+        box-shadow: 0 0 5px $active-color;
+        text-shadow: 0 0 5px $active-color;
+      }
     }
   }
 }

@@ -1,26 +1,58 @@
-.logo__title {
+.logo {
   font-family: $secondary-normal-font;
   font-size: 35px;
+  -webkit-text-fill-color: transparent;
+
   background: $shine-gold-background;
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 5s infinite;
   background-size: 100%;
   background-position: left;
+
+  animation: shine 3s infinite;
 
   transition-duration: $normal-transition-duration;
   transition-timing-function: $normal-transition-timing-function;
   transition-property: background-size;
 
-  &:hover,
-  &:focus,
-  &:active {
-    background-size: 270%;
-    animation: shine 1s infinite;
-  }
-
   @media screen and (min-width: $desktop-width) {
     font-size: 50px;
+  }
+}
+
+.logo-link {
+  padding: 0px 5px;
+  border-radius: 5px;
+
+  transition-duration: $normal-transition-duration;
+  transition-timing-function: $normal-transition-timing-function;
+  transition-property: box-shadow;
+
+  &:active {
+    background-color: $main-background-color;
+
+    .logo {
+      background-size: 270%;
+      animation: shine 1s infinite;
+    }
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      .logo {
+        background-size: 270%;
+        animation: shine 1s infinite;
+      }
+    }
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 5px $active-color;
+    outline: none;
+
+    .logo {
+      background-size: 270%;
+      animation: shine 1s infinite;
+    }
   }
 }

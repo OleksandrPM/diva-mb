@@ -61,7 +61,7 @@ textarea {
 
 blockquote,
 q {
-  quotes: '“' '”' '‘' '’';
+  quotes: "“" "”" "‘" "’";
 
   &::before {
     content: open-quote;
