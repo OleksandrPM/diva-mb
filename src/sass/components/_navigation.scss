@@ -26,19 +26,46 @@
 }
 
 .nav__link {
+  padding: 10 5;
+  border-radius: 10px;
+
   text-align: center;
   font-size: 2.5rem;
 
   @media screen and (min-width: $tablet-width) {
     display: block;
     width: 100%;
-    padding: 10 5;
-    border-radius: 10px;
+
     font-size: 12px;
   }
 
   @media screen and (min-width: $desktop-width) {
     font-size: 20px;
+  }
+
+  &:active {
+    color: $active-color;
+    text-shadow: 0 0 5px $active-color;
+
+    @media screen and (min-width: $tablet-width) {
+      box-shadow: 0 0 5px $active-color;
+    }
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      color: $active-color;
+      text-shadow: 0 0 5px $active-color;
+
+      @media screen and (min-width: $tablet-width) {
+        box-shadow: 0 0 5px $active-color;
+      }
+    }
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 5px $active-color;
   }
 
   &.active {
@@ -49,37 +76,6 @@
     @media screen and (min-width: $tablet-width) {
       color: $active-navlink-color;
       box-shadow: 0 0 5px $active-navlink-color;
-    }
-  }
-
-  &:active {
-    @media screen and (max-width: calc($tablet-width - 0.02px)) {
-      color: $active-color;
-      text-shadow: 0 0 5px $active-color;
-    }
-
-    @media screen and (min-width: $tablet-width) {
-      color: $active-color;
-      box-shadow: 0 0 5px $active-color;
-      text-shadow: 0 0 5px $active-color;
-    }
-  }
-
-  @media (hover: hover) {
-    &:hover,
-    &:focus {
-      outline: none;
-
-      @media screen and (max-width: calc($tablet-width - 0.02px)) {
-        color: $active-color;
-        text-shadow: 0 0 5px $active-color;
-      }
-
-      @media screen and (min-width: $tablet-width) {
-        color: $active-color;
-        box-shadow: 0 0 5px $active-color;
-        text-shadow: 0 0 5px $active-color;
-      }
     }
   }
 }
