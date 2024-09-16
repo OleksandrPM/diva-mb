@@ -19,7 +19,7 @@ export default function buildMasterContainer(master) {
               ${buildMasterCard(master, id)}
               ${buildPriceList(master, id)}
             </div>
-           ${buildShowMoreBtn(id)}
+           ${buildShowInfoBtn(id)}
            ${buildCallmeBtn(phone)}
           </div>`;
 }
@@ -91,14 +91,14 @@ function buildCallmeBtn(phone) {
   }
 }
 
-function buildShowMoreBtn(id) {
+function buildShowInfoBtn(id) {
   return `<button 
-  class="button show-more__btn js-show-more" 
+  class="button show-info-btn js-show-info" 
   type="button"
   data-id="${id}" 
   title="zobrazit informace">
-  <span class="show-more__text js-show-more" data-id="${id}">Info a ceny</span>
-  <svg class="show-more__icon unclick" data-id="${id}" viewBox="0 0 32 32" width="20" height="20" >
+  <span class="show-info-btn__text unclick" data-id="${id}">Info a ceny</span>
+  <svg class="show-info-btn__icon unclick" data-id="${id}" viewBox="0 0 32 32" width="20" height="20" >
     <use href="${icons}#icon-up-arrow"></use>
     </svg>
   </button>`;

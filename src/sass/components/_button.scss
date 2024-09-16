@@ -26,17 +26,11 @@
     }
   }
 
-  @media (hover: none) {
-    &:focus {
-      outline: none;
-    }
+  &:focus-visible {
+    outline: 1px solid $active-color;
   }
 
   @media (hover: hover) {
-    &:focus {
-      outline: 1px solid $active-color;
-    }
-
     &:hover {
       color: $active-color;
       box-shadow: 0 0 5px $active-color;

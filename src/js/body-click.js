@@ -59,7 +59,7 @@ function onDocumentClick(event) {
     return;
   }
 
-  if (elClasses.includes("js-show-more")) {
+  if (elClasses.includes("js-show-info")) {
     const id = event.target.dataset.id;
     showHidePrice(id);
     return;

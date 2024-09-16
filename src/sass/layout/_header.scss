@@ -13,7 +13,7 @@
 
   background-color: $main-background-color;
 
-  transition-duration: 300ms;
+  transition-duration: $normal-transition-duration;
   transition-timing-function: ease-out;
   transition-property: background-color, backdrop-filter;
 

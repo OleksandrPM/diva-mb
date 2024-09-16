@@ -11,7 +11,7 @@
 
   transform: translateX(100%);
 
-  transition-duration: 250ms;
+  transition-duration: $normal-transition-duration;
   transition-timing-function: ease-in-out;
   transition-property: transform;
 
