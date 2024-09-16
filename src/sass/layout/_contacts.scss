@@ -24,9 +24,10 @@
       height: calc($desktop-width * 0.3);
     }
 
-    &:hover,
-    &:focus {
-      box-shadow: 0 0 5px $active-color;
+    @media (hover: hover) {
+      &:hover {
+        box-shadow: 0 0 10px $active-color;
+      }
     }
   }
 }

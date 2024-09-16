@@ -11,12 +11,23 @@
   border-radius: 50%;
   background-color: $main-text-color;
 
-  &:hover,
-  &:focus,
   &:active {
     background-color: $active-color;
     box-shadow: 0 0 5px $active-color;
     outline: none;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: $active-color;
+      box-shadow: 0 0 5px $active-color;
+    }
+  }
+
+  &:focus-visible {
+    outline: none;
+    background-color: $active-color;
+    box-shadow: 0 0 5px $active-color;
   }
 }
 
