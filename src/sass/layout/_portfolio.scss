@@ -22,7 +22,7 @@
 
   transition-duration: $normal-transition-duration;
   transition-timing-function: $normal-transition-timing-function;
-  transition-property: transform, box-shadow;
+  transition-property: transform, box-shadow, outline;
 
   @media screen and (min-width: $tablet-width) {
     width: 32%;
@@ -33,19 +33,21 @@
   }
 
   &:active {
-    box-shadow: 0 0 5px $active-color;
+    outline: solid 1px $main-text-color;
+    box-shadow: 0 0 10px $active-color;
   }
 
   @media (hover: hover) {
     &:hover {
+      outline: solid 1px $main-text-color;
       transform: translate(1.1);
-      box-shadow: 0 0 5px $active-color;
+      box-shadow: 0 0 10px $active-color;
     }
   }
 
   &:focus-visible {
-    outline: none;
-    box-shadow: 0 0 5px $active-color;
+    outline: solid 1px $main-text-color;
+    box-shadow: 0 0 10px $active-color;
     transform: translate(1.1);
   }
 }

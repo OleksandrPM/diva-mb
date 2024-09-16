@@ -28,22 +28,36 @@
 
   transition-duration: $normal-transition-duration;
   transition-timing-function: $normal-transition-timing-function;
-  transition-property: box-shadow, transform;
+  transition-property: box-shadow, outline;
 
   @media screen and (min-width: $tablet-width) {
     width: 30%;
   }
 
-  &:hover,
-  &:focus,
-  &:active {
-    box-shadow: 0 0 5px $active-color;
-    transform: translateY(1.5);
+  &:has(.cooperation__link:active) {
+    outline: solid 1px $main-text-color;
+    box-shadow: 0 0 10px $active-color;
+  }
+
+  @media (hover: hover) {
+    &:has(.cooperation__link:hover) {
+      outline: solid 1px $main-text-color;
+      box-shadow: 0 0 10px $active-color;
+    }
+  }
+
+  &:has(.cooperation__link:focus-visible) {
+    outline: solid 1px $main-text-color;
+    box-shadow: 0 0 10px $active-color;
   }
 }
 
 .cooperation__link {
   width: 100%;
+
+  &:focus-visible {
+    outline: none;
+  }
 }
 
 .cooperation__img {
