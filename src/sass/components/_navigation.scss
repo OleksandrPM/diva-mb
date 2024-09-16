@@ -77,5 +77,30 @@
       color: $active-navlink-color;
       box-shadow: 0 0 5px $active-navlink-color;
     }
+
+    &:active {
+      color: $active-color;
+      text-shadow: 0 0 5px $active-color;
+
+      @media screen and (min-width: $tablet-width) {
+        box-shadow: 0 0 5px $active-color;
+      }
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        color: $active-color;
+        text-shadow: 0 0 5px $active-color;
+
+        @media screen and (min-width: $tablet-width) {
+          box-shadow: 0 0 5px $active-color;
+        }
+      }
+    }
+
+    &:focus-visible {
+      outline: none;
+      box-shadow: 0 0 5px $active-color;
+    }
   }
 }

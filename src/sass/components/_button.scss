@@ -51,6 +51,7 @@
 
   &.book-btn {
     padding: 5 10;
-    border-radius: 5px;
+    border: 1px solid $main-text-color;
+    border-radius: 10px;
   }
 }
