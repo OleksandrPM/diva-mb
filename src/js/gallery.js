@@ -1,30 +1,30 @@
-import SimpleLightbox from 'simplelightbox';
-import 'simplelightbox/dist/simple-lightbox.min.css';
-import localGalleryData from '../data/gallery.json';
-import axios from 'axios';
+import SimpleLightbox from "simplelightbox";
+import "simplelightbox/dist/simple-lightbox.min.css";
+import localGalleryData from "../data/gallery.json";
+import axios from "axios";
 
 const galleryDataURL =
-  'https://docs.google.com/document/d/1niRxzdwKhhlSuL1fsHcZ9TC7vmh9UfuY0pXh0mILCnY/export?format=txt';
+  "https://docs.google.com/document/d/1niRxzdwKhhlSuL1fsHcZ9TC7vmh9UfuY0pXh0mILCnY/export?format=txt";
 
-const galleryEl = document.querySelector('.portfolio__gallery');
+const galleryEl = document.querySelector(".portfolio__gallery");
 
-let lightbox = new SimpleLightbox('.portfolio__gallery a');
+let lightbox = new SimpleLightbox(".portfolio__gallery a");
 
 axios(galleryDataURL)
-  .then(response => {
+  .then((response) => {
     renderGallery(response.data);
   })
-  .catch(e => {
+  .catch((e) => {
     console.log(e.message);
     renderGallery(localGalleryData);
   });
 
 function renderGallery(gallery) {
   const galleryMarkup = gallery
-    .map(imgObj => {
+    .map((imgObj) => {
       return buildGalleryItemMarkup(imgObj);
     })
-    .join('');
+    .join("");
 
   galleryEl.innerHTML = galleryMarkup;
   lightbox.refresh();
@@ -33,7 +33,7 @@ function renderGallery(gallery) {
 function buildGalleryItemMarkup(imgObj) {
   const { description, big_photo_URL, small_photo_URL, retina_photo_URL } =
     imgObj;
-  const imgAlt = description ? description : 'Gallery image';
+  const imgAlt = description ? description : "Gallery image";
 
   if (big_photo_URL && small_photo_URL && retina_photo_URL) {
     return `<a href="${big_photo_URL}">

@@ -20,6 +20,10 @@
   border-radius: 5px;
   overflow: hidden;
 
+  transition-duration: $normal-transition-duration;
+  transition-timing-function: $normal-transition-timing-function;
+  transition-property: transform, box-shadow;
+
   @media screen and (min-width: $tablet-width) {
     width: 32%;
   }
@@ -28,10 +32,21 @@
     width: 23%;
   }
 
-  &:hover,
-  &:focus,
   &:active {
     box-shadow: 0 0 5px $active-color;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      transform: translate(1.1);
+      box-shadow: 0 0 5px $active-color;
+    }
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 5px $active-color;
+    transform: translate(1.1);
   }
 }
 
