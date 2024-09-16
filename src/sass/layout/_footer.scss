@@ -30,9 +30,20 @@ footer {
   & a {
     text-decoration: underline;
 
-    &:hover,
-    &:focus,
     &:active {
+      color: $active-color;
+      text-shadow: 0 0 5px $active-color;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        color: $active-color;
+        text-shadow: 0 0 5px $active-color;
+      }
+    }
+
+    &:focus-visible {
+      outline: solid 1px $active-color;
       color: $active-color;
       text-shadow: 0 0 5px $active-color;
     }
