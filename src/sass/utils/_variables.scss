@@ -1,38 +1,7 @@
-// Font-faces
-@font-face {
-  font-family: RobotoNormal;
-  src: url(../fonts/Roboto-Regular.ttf);
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: RobotoBold;
-  src: url(../fonts/Roboto-Bold.ttf);
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: EBGaramondNormal;
-  src: url(../fonts/EBGaramond-Regular.ttf);
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: EBGaramondBold;
-  src: url(../fonts/EBGaramond-Bold.ttf);
-  font-weight: bold;
-}
-
 // Breakpoints
 $mobile-width: 375px;
 $tablet-width: 768px;
 $desktop-width: 1280px;
-
-// Fonts
-$main-normal-font: "RobotoNormal", sans-serif;
-$main-bold-font: "RobotoBold", sans-serif;
-$secondary-normal-font: "EBGaramondNormal", serif;
-$secondary-bold-font: "EBGaramondBold", serif;
 
 // Colors
 $main-text-color: rgb(185, 160, 103);

@@ -1,3 +1,5 @@
+@use "./variables";
+
 // .scrollable {
 //   overflow-y: scroll;
 //   -ms-overflow-style: none; /* IE and Edge */
@@ -16,7 +18,7 @@
   &::-webkit-scrollbar {
     width: 5px;
 
-    @media screen and (min-width: $tablet-width) {
+    @media screen and (min-width: variables.$tablet-width) {
       width: 10px;
     }
   }
@@ -26,19 +28,19 @@
     box-shadow: inset 0 0 5px grey;
     border-radius: 2.5px;
 
-    @media screen and (min-width: $tablet-width) {
+    @media screen and (min-width: variables.$tablet-width) {
       border-radius: 5px;
     }
   }
 
   /* Handle */
   &::-webkit-scrollbar-thumb {
-    background: $active-color;
+    background: variables.$active-color;
     border-radius: 10px;
   }
 
   /* Handle on hover */
   &::-webkit-scrollbar-thumb:hover {
-    background: $active-color;
+    background: variables.$active-color;
   }
 }

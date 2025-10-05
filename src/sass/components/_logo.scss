@@ -1,3 +1,6 @@
+@use "../utils/variables" as *;
+@use "../utils/fonts" as *;
+
 .logo {
   font-family: $secondary-normal-font;
   font-size: 35px;

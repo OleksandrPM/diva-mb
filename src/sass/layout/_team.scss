@@ -1,3 +1,5 @@
+@use "../utils/variables" as *;
+
 .team__gallery {
   & .team__list {
     display: grid;

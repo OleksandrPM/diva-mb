@@ -1,3 +1,6 @@
+@use "../utils/variables" as *;
+@use "../utils/fonts" as *;
+
 .master-container {
   position: relative;
   display: flex;

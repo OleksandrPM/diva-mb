@@ -1,4 +1,5 @@
-@import "~node_modules/modern-normalize/modern-normalize.css";
+@use "../utils/variables" as *;
+@use "../utils/fonts" as *;
 
 html {
   scroll-behavior: smooth;
