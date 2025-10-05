@@ -1,5 +1,8 @@
 package-lock.json
 
+# Parcel
+.parcel-cache/
+
 #Junk
 .DS_Store
 .vscode/

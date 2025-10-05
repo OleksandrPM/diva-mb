@@ -7,11 +7,11 @@
     "build": "parcel build"
   },
   "devDependencies": {
-    "@parcel/compressor-brotli": "^2.9.3",
+    "@parcel/compressor-brotli": "^2.16.0",
     "@parcel/compressor-gzip": "^2.9.3",
     "@parcel/transformer-sass": "^2.9.3",
     "buffer": "^6.0.3",
-    "parcel": "^2.9.3",
+    "parcel": "^2.16.0",
     "posthtml-include": "^1.7.4",
     "process": "^0.11.10"
   },
@@ -19,8 +19,8 @@
     "axios": "^1.4.0",
     "body-scroll-lock": "^4.0.0-beta.0",
     "lodash": "^4.17.21",
-    "modern-normalize": "^1.1.0",
-    "nanoid": "^4.0.2",
+    "modern-normalize": "^3.0.1",
+    "nanoid": "^5.1.6",
     "simplelightbox": "^2.14.1"
   }
 }
