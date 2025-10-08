@@ -1,11 +1,5 @@
 import { nanoid } from "nanoid";
-import {
-  teamDefPhotos,
-  teamNormPhotos,
-  teamRetinaPhotos,
-} from "../images/team";
-import avatar from "../images/team/girl-profile.png";
-import icons from "../images/icons.svg";
+import { teamAvatar, icons } from "../images";
 import { buildSocialsList } from "./socials-icons";
 
 export default function buildMasterContainer(master) {
@@ -25,28 +19,27 @@ export default function buildMasterContainer(master) {
 }
 
 function buildMasterCard(master, id) {
-  const { photo, name, specialization, socials } = master;
-  const defPhotoIndex = getPhotoIndex(photo, teamDefPhotos);
-  const normPhotoIndex = getPhotoIndex(photo, teamNormPhotos);
-  const retinaPhotoIndex = getPhotoIndex(photo, teamRetinaPhotos);
+  const {
+    photo: { def, x1: norm, x2: retina },
+    name,
+    specialization,
+    socials,
+  } = master;
 
   return `<div class="master-card active" data-id="${id}">
     <div class="master-card__img-container">
-      <img class="master-card__image" 
-        srcset="
-        ${normPhotoIndex !== -1 ? teamNormPhotos[normPhotoIndex] : avatar} 1x, 
-        ${
-          retinaPhotoIndex !== -1 ? teamRetinaPhotos[retinaPhotoIndex] : avatar
-        } 2x"
-        src=${defPhotoIndex !== -1 ? teamDefPhotos[defPhotoIndex] : avatar}
-        min-width="270"
-        alt="Photo of ${name}" 
+      <img class="master-card__image"
+        srcset="${norm ? norm : teamAvatar} 1x, ${
+    retina ? retina : teamAvatar
+  } 2x"
+        src="${def ? def : teamAvatar}"
+        alt="Photo of ${name}"
         loading="lazy"
       />
     </div>
     <h3 class="master-card__title">${name}</h3>
     <p class="master-card__article">${specialization}</p>
-    ${buildSocialsList(socials)}  
+    ${buildSocialsList(socials)}
   </div>`;
 }
 

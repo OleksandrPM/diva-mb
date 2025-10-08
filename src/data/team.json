@@ -2,7 +2,7 @@
   {
     "name": "Iryna Volfova",
     "specialization": "Majitelka studia, <br/> kadeřník-stylista",
-    "photo": "volfova",
+    "photoIndex": "volfova",
     "contacts": { "phone": "+420773939303", "email": "" },
     "socials": { "fb": "", "instagram": "", "tiktok": "" },
     "price_list": {
@@ -31,7 +31,7 @@
   {
     "name": "Valentýna Bondar",
     "specialization": "Kadeřnice",
-    "photo": "bondar",
+    "photoIndex": "bondar",
     "contacts": { "phone": "+420603963301", "email": "" },
     "socials": { "fb": "", "instagram": "", "tiktok": "" },
     "price_list": {
@@ -56,7 +56,7 @@
   {
     "name": "Naina Hontar",
     "specialization": "Kadeřník-kolorista",
-    "photo": "hontar",
+    "photoIndex": "hontar",
     "contacts": { "phone": "+420776274140", "email": "" },
     "socials": { "fb": "", "instagram": "", "tiktok": "" },
     "price_list": {
@@ -84,7 +84,7 @@
   {
     "name": "Iveta Janečková",
     "specialization": "Kadeřnice",
-    "photo": "janeckova",
+    "photoIndex": "janeckova",
     "contacts": { "phone": "+420737335868", "email": "" },
     "socials": { "fb": "", "instagram": "", "tiktok": "" },
     "price_list": {
@@ -108,7 +108,7 @@
   {
     "name": "Anna Khotynenko",
     "specialization": "Mistr permanentního make-upu <br/> a tetování",
-    "photo": "khotynenko",
+    "photoIndex": "khotynenko",
     "contacts": { "phone": "+420776813942", "email": "" },
     "socials": {
       "fb": "",
@@ -149,7 +149,7 @@
   {
     "name": "Tetiana Trach",
     "specialization": "Nezávislá kosmetická poradkyně, <br/> vizážistka společnosti \"Mary Kay\"",
-    "photo": "trach",
+    "photoIndex": "trach",
     "contacts": { "phone": "+420774049282", "email": "" },
     "socials": { "fb": "", "instagram": "", "tiktok": "" },
     "price_list": {
@@ -165,7 +165,7 @@
   {
     "name": "Ilona Pecinova",
     "specialization": "Prodlužování vlasů, <br/> kadeřnické služby",
-    "photo": "pecinova",
+    "photoIndex": "pecinova",
     "contacts": { "phone": "+420733167557", "email": "" },
     "socials": {
       "fb": "https://www.facebook.com/goodhaircz",
@@ -192,7 +192,7 @@
   {
     "name": "Elena Bocan",
     "specialization": "Kadeřnice",
-    "photo": "bocan",
+    "photoIndex": "bocan",
     "contacts": { "phone": "+420774074606", "email": "" },
     "socials": { "fb": "", "instagram": "", "tiktok": "" },
     "price_list": {

@@ -1,7 +1,7 @@
+import axios from "axios";
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 import localGalleryData from "../data/gallery.json";
-import axios from "axios";
 
 const galleryDataURL =
   "https://docs.google.com/document/d/1niRxzdwKhhlSuL1fsHcZ9TC7vmh9UfuY0pXh0mILCnY/export?format=txt";

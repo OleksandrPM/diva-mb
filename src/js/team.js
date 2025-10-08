@@ -1,11 +1,12 @@
-import team from '../data/team.json';
-import buildMasterContainer from './team-card';
+import team from "../data/team.json";
+import buildMasterContainer from "./team-card";
+import { teamPhotos } from "../images/team/";
 
-const teamModalTitle = 'Vyberte si mistra:';
+const teamModalTitle = "Vyberte si mistra:";
 
-const teamGalleryEl = document.querySelector('.js-team-gallery');
-const modalContentEl = document.querySelector('.js-modal-content');
-const modalTitleEl = document.querySelector('.modal__title');
+const teamGalleryEl = document.querySelector(".js-team-gallery");
+const modalContentEl = document.querySelector(".js-modal-content");
+const modalTitleEl = document.querySelector(".modal__title");
 
 teamGalleryEl.innerHTML = buildTeamList(team);
 
@@ -16,7 +17,7 @@ export function renderFilteredTeamList(service) {
 }
 
 function buildFilteredTeamList(servise) {
-  const filteredTeam = team.filter(master =>
+  const filteredTeam = team.filter((master) =>
     Object.keys(master.price_list).includes(servise)
   );
 
@@ -25,10 +26,12 @@ function buildFilteredTeamList(servise) {
 
 function buildTeamList(team) {
   const teamList = team
-    .map(member => {
-      return `<li class="team__item">${buildMasterContainer(member)}</li>`;
+    .map((member) => {
+      const master = { ...member, photo: teamPhotos[member.photoIndex] };
+
+      return `<li class="team__item">${buildMasterContainer(master)}</li>`;
     })
-    .join('');
+    .join("");
 
   return `<ul class="team__list">${teamList}</ul>`;
 }

@@ -1,6 +1,6 @@
 import serviceList from "../data/service-list.json";
 import { modalContentEl } from "./modal";
-import icons from "../images/icons.svg";
+import { icons } from "../images";
 
 const servicesModalTitle = "Vyberte službu:";
 

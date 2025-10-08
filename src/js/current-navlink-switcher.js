@@ -1,27 +1,28 @@
-const navLinksEls = document.querySelectorAll('.nav__link');
-const sectionsEls = document.querySelectorAll('section');
+const navLinksEls = document.querySelectorAll(".nav__link");
+const sectionsEls = document.querySelectorAll("section");
 
-const linkClassName = 'nav__link';
-const activeLinkClassName = 'active';
+const linkClassName = "nav__link";
+const activeLinkClassName = "active";
 
 export function switchNavLinkInScrolling() {
-  let currentSectionId = '';
+  let currentSectionId = "";
 
-  sectionsEls.forEach(el => {
+  sectionsEls.forEach((el) => {
     if (scrollY >= el.offsetTop - 200) {
-      currentSectionId = el.getAttribute('id');
+      currentSectionId = el.getAttribute("id");
     }
   });
 
-  navLinksEls.forEach(el => {
+  navLinksEls.forEach((el) => {
     if (
-      !el.classList.value.includes('active') &&
+      !el.classList.value.includes(activeLinkClassName) &&
       el.dataset.nav === currentSectionId
     ) {
-      el.classList.add('active');
+      el.classList.add(activeLinkClassName);
     }
+
     if (el.dataset.nav !== currentSectionId) {
-      el.classList.remove('active');
+      el.classList.remove(activeLinkClassName);
     }
   });
 }
@@ -31,13 +32,14 @@ export function switchCurrentNavLink(event) {
 
   if (elClasses.includes(linkClassName)) {
     const currentLink = event.target.dataset.nav;
-    navLinksEls.forEach(el => {
+    navLinksEls.forEach((el) => {
       if (
         el.dataset.nav === currentLink &&
         !el.classList.value.includes(activeLinkClassName)
       ) {
         el.classList.add(activeLinkClassName);
       }
+
       if (
         el.dataset.nav !== currentLink &&
         el.classList.value.includes(activeLinkClassName)

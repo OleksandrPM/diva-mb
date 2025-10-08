@@ -1,61 +1,62 @@
-import trachDefPhoto from './default/trach.jpg';
-import bondarDefPhoto from './default/bondar.jpg';
-import hontarDefPhoto from './default/hontar.jpg';
-import janeckovaDefPhoto from './default/janeckova.jpg';
-import khotynenkoDefPhoto from './default/khotynenko.jpg';
-import pecinovaDefPhoto from './default/pecinova.jpg';
-import volfovaDefPhoto from './default/volfova.jpg';
-import bocanDefPhoto from './default/bocan.jpg';
+const trach = {
+  def: new URL("./default/trach.jpg", import.meta.url),
+  x1: new URL("./x1/trach_x1.webp", import.meta.url),
+  x2: new URL("./x2/trach_x2.webp", import.meta.url),
+};
 
-import trachNormPhoto from './x1/trach_x1.webp';
-import bondarNormPhoto from './x1/bondar_x1.webp';
-import hontarNormPhoto from './x1/hontar_x1.webp';
-import janeckovaNormPhoto from './x1/janeckova_x1.webp';
-import khotynenkoNormPhoto from './x1/khotynenko_x1.webp';
-import pecinovaNormPhoto from './x1/pecinova_x1.webp';
-import volfovaNormPhoto from './x1/volfova_x1.webp';
-import bocanNormPhoto from './x1/bocan_x1.webp';
+const bondar = {
+  def: new URL("./default/bondar.jpg", import.meta.url),
+  x1: new URL("./x1/bondar_x1.webp", import.meta.url),
+  x2: new URL("./x2/bondar_x2.webp", import.meta.url),
+};
 
-import trachRetinaPhoto from './x2/trach_x2.webp';
-import bondarRetinaPhoto from './x2/bondar_x2.webp';
-import hontarRetinaPhoto from './x2/hontar_x2.webp';
-import janeckovaRetinaPhoto from './x2/janeckova_x2.webp';
-import khotynenkoRetinaPhoto from './x2/khotynenko_x2.webp';
-import pecinovaRetinaPhoto from './x2/pecinova_x2.webp';
-import volfovaRetinaPhoto from './x2/volfova_x2.webp';
-import bocanRetinaPhoto from './x2/bocan_x2.webp';
+const hontar = {
+  def: new URL("./default/hontar.jpg", import.meta.url),
+  x1: new URL("./x1/hontar_x1.webp", import.meta.url),
+  x2: new URL("./x2/hontar_x2.webp", import.meta.url),
+};
 
-const teamDefPhotos = [
-  trachDefPhoto,
-  bondarDefPhoto,
-  hontarDefPhoto,
-  janeckovaDefPhoto,
-  khotynenkoDefPhoto,
-  pecinovaDefPhoto,
-  volfovaDefPhoto,
-  bocanDefPhoto,
-];
+const janeckova = {
+  def: new URL("./default/janeckova.jpg", import.meta.url),
+  x1: new URL("./x1/janeckova_x1.webp", import.meta.url),
+  x2: new URL("./x2/janeckova_x2.webp", import.meta.url),
+};
 
-const teamNormPhotos = [
-  trachNormPhoto,
-  bondarNormPhoto,
-  hontarNormPhoto,
-  janeckovaNormPhoto,
-  khotynenkoNormPhoto,
-  pecinovaNormPhoto,
-  volfovaNormPhoto,
-  bocanNormPhoto,
-];
+const khotynenko = {
+  def: new URL("./default/khotynenko.jpg", import.meta.url),
+  x1: new URL("./x1/khotynenko_x1.webp", import.meta.url),
+  x2: new URL("./x2/khotynenko_x2.webp", import.meta.url),
+};
 
-const teamRetinaPhotos = [
-  trachRetinaPhoto,
-  bondarRetinaPhoto,
-  hontarRetinaPhoto,
-  janeckovaRetinaPhoto,
-  khotynenkoRetinaPhoto,
-  pecinovaRetinaPhoto,
-  volfovaRetinaPhoto,
-  bocanRetinaPhoto,
-];
+const pecinova = {
+  def: new URL("./default/pecinova.jpg", import.meta.url),
+  x1: new URL("./x1/pecinova_x1.webp", import.meta.url),
+  x2: new URL("./x2/pecinova_x2.webp", import.meta.url),
+};
 
-export { teamDefPhotos, teamNormPhotos, teamRetinaPhotos };
+const volfova = {
+  def: new URL("./default/volfova.jpg", import.meta.url),
+  x1: new URL("./x1/volfova_x1.webp", import.meta.url),
+  x2: new URL("./x2/volfova_x2.webp", import.meta.url),
+};
+
+const bocan = {
+  def: new URL("./default/bocan.jpg", import.meta.url),
+  x1: new URL("./x1/bocan_x1.webp", import.meta.url),
+  x2: new URL("./x2/bocan_x2.webp", import.meta.url),
+};
+
+const avatar = new URL("./girl-profile.png", import.meta.url);
+
+const teamPhotos = {
+  trach,
+  bondar,
+  hontar,
+  janeckova,
+  khotynenko,
+  pecinova,
+  volfova,
+  bocan,
+};
+
+export { teamPhotos, avatar };

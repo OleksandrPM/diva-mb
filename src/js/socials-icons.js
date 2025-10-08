@@ -1,41 +1,41 @@
-import icons from '../images/icons.svg';
+import { icons } from "../images";
 
 const iconsSubPaths = {
-  fb: '#icon-facebook',
-  instagram: '#icon-square-instagram',
-  tiktok: '#icon-tiktok',
+  fb: "#icon-facebook",
+  instagram: "#icon-square-instagram",
+  tiktok: "#icon-tiktok",
 };
 
 export function buildSocialsList(socials) {
   const networkList = Object.keys(socials);
-  const filteredNetworkList = networkList.filter(name => socials[name]);
+  const filteredNetworkList = networkList.filter((name) => socials[name]);
 
   if (filteredNetworkList.length !== 0) {
     const items = filteredNetworkList
-      .map(network => {
+      .map((network) => {
         return `<li><a href="${
           socials[network]
         }" target="_blank" rel="noopener noreferrer" class="socials__link" title="social">${buildIcon(
           getIconLink(network)
         )}</a></li>`;
       })
-      .join('');
+      .join("");
 
     const socialsMarkup = `<ul class='socials master-card__socials'>${items}</ul>`;
 
     return socialsMarkup;
   } else {
-    return '';
+    return "";
   }
 }
 
 function getIconLink(network) {
   switch (network) {
-    case 'fb':
+    case "fb":
       return `${icons}${iconsSubPaths.fb}`;
-    case 'instagram':
+    case "instagram":
       return `${icons}${iconsSubPaths.instagram}`;
-    case 'tiktok':
+    case "tiktok":
       return `${icons}${iconsSubPaths.tiktok}`;
   }
 }
