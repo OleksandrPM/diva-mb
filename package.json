@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build --no-optimize"
+    "build": "parcel build"
   },
   "devDependencies": {
     "@parcel/compressor-brotli": "^2.16.0",

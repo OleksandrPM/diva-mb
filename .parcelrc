@@ -8,5 +8,8 @@
       "@parcel/compressor-gzip",
       "@parcel/compressor-brotli"
     ]
+  },
+  "optimizers": {
+    "*.svg": []
   }
 }
