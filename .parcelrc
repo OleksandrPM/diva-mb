@@ -11,5 +11,9 @@
   },
   "optimizers": {
     "*.svg": []
-  }
+  },
+  "reporters": [
+    "...",
+    "parcel-reporter-clean-dist"
+  ]
 }
