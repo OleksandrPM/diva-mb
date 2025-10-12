@@ -3,7 +3,7 @@ import advertising from "../data/advertising.json";
 const advertisingEl = document.querySelector(".advertising");
 const contentEl = advertisingEl.querySelector(".advertising__content");
 
-setTimeout(renderAdvertising, 5000);
+setTimeout(renderAdvertising, 3000);
 
 function renderAdvertising() {
   try {

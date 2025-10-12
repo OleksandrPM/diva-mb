@@ -68,7 +68,6 @@
   -webkit-background-clip: text;
   background-clip: text;
 
-  // del
   animation: right-to-left 1s ease-out;
 
   & figcaption {
@@ -97,6 +96,8 @@
   background-position: center;
   -webkit-background-clip: text;
   background-clip: text;
+
+  // animation: fade 2s ease-out;
 
   @media screen and (min-width: $desktop-width) {
     font-size: 42px;

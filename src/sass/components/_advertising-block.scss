@@ -12,6 +12,8 @@
   background-color: $ad-background-color;
   border-radius: 10px;
 
+  animation: fade 2s ease-out;
+
   @media screen and (min-width: $tablet-width) {
     width: 40vw;
   }
