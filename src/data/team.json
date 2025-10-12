@@ -72,6 +72,33 @@
     "other": "*PMU - permanentní make-up"
   },
   {
+    "name": "Ilona Pecinova",
+    "specialization": "Prodlužování vlasů, <br/> kadeřnické služby",
+    "photoIndex": "pecinova",
+    "contacts": { "phone": "+420733167557", "email": "" },
+    "socials": {
+      "fb": "https://www.facebook.com/goodhaircz",
+      "instagram": "https://www.instagram.com/goodhaircz/",
+      "tiktok": "https://www.tiktok.com/@goodhaircz?fbclid=IwAR2S4UqNfsk6CvdVWbmlwVffHyxQsUtTi_xIHS0Nd7CTsERcUijiIqaMGVs"
+    },
+    "price_list": {
+      "kadern_sluzby": {
+        "name": "Kadeřnické služby",
+        "services": [
+          {
+            "name": "Kadeřnické služby",
+            "price": "ceník na vyžádání"
+          },
+          {
+            "name": "Prodlužování vlasů Goodhair",
+            "price": "ceník na vyžádání"
+          }
+        ]
+      }
+    },
+    "other": ""
+  },
+  {
     "name": "Tetiana Trach",
     "specialization": "Nezávislá kosmetická poradkyně, <br/> vizážistka společnosti \"Mary Kay\"",
     "photoIndex": "trach",
