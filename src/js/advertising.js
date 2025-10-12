@@ -1,24 +1,19 @@
-import axios from "axios";
-
-const advertisingURL =
-  "https://docs.google.com/document/d/1Mxgp9hdtbm3hNf3S9lun98fVyLD0qNINv8z1RWM0pdw/export?format=txt";
+import advertising from "../data/advertising.json";
 
 const advertisingEl = document.querySelector(".advertising");
 const contentEl = advertisingEl.querySelector(".advertising__content");
 
-setTimeout(renderAdvertising(), 5000);
+setTimeout(renderAdvertising, 5000);
 
 function renderAdvertising() {
-  axios(advertisingURL)
-    .then(({ data }) => {
-      if (data.text) {
-        buildAdvertisingMarkup(data);
-        advertisingEl.style.display = "block";
-      }
-    })
-    .catch((error) => {
-      console.log(`Can not load advertising info. ${error.message}`);
-    });
+  try {
+    if (advertising.text) {
+      buildAdvertisingMarkup(advertising);
+      advertisingEl.style.display = "block";
+    }
+  } catch (error) {
+    console.log(`Can not load advertising info. ${error.message}`);
+  }
 }
 
 function buildAdvertisingMarkup(advObject) {
