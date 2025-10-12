@@ -9,97 +9,22 @@
       "kadern_sluzby": {
         "name": "Kadeřnické služby",
         "services": [
-          { "name": "Dámský střih (kompletní služba)", "price": "od 650" },
-          { "name": "Foukaná", "price": "od 450" },
-          { "name": "Barva + střih", "price": "od 1400" },
-          { "name": "Melír", "price": "od 1200" },
-          { "name": "Balayage", "price": "od 2500" },
-          { "name": "Airtouch", "price": "od 2500" },
-          { "name": "Dekolorace (stahování barvy)", "price": "od 1200" },
-          { "name": "Ošetření \"RESTRUCTURE\"", "price": "800" },
+          { "name": "Dámský střih (kompletní služba)", "price": "850 - 1500" },
+          { "name": "Foukaná", "price": "450 - 700" },
+          { "name": "Barva", "price": "od 2000" },
+          { "name": "Melír", "price": "1500 - 3000" },
+          { "name": "Balayage", "price": "2500 - 5000" },
+          { "name": "Airtouch", "price": "3000 - 6000" },
+          { "name": "Dekolorace (stahování barvy)", "price": "od 2000" },
+          { "name": "Ošetření \"RESTRUCTURE\"", "price": "800 - 1500" },
           {
             "name": "Smoothing system (nová metoda vyhlazení vlasů)",
-            "price": "od 1900"
+            "price": "2200 - 3000"
           },
+          { "name": "Natáčení vlasů", "price": "od 500" },
+          { "name": "Společensky účes", "price": "1500 - 2700" },
           { "name": "Pánský střih", "price": "400" },
           { "name": "Dětský střih", "price": "300" }
-        ]
-      }
-    },
-    "other": "*Ceny jsou orientační, odvíjí se od spotřeby materiálu."
-  },
-  {
-    "name": "Valentýna Bondar",
-    "specialization": "Kadeřnice",
-    "photoIndex": "bondar",
-    "contacts": { "phone": "+420603963301", "email": "" },
-    "socials": { "fb": "", "instagram": "", "tiktok": "" },
-    "price_list": {
-      "kadern_sluzby": {
-        "name": "Kadeřnické služby",
-        "services": [
-          { "name": "Dámský střih (kompletní služba)", "price": "od 600" },
-          { "name": "Foukaná", "price": "od 450" },
-          { "name": "Barva", "price": "od 650" },
-          { "name": "Melír", "price": "od 1100" },
-          { "name": "Balayage", "price": "od 2500" },
-          { "name": "Airtouch", "price": "od 2500" },
-
-          { "name": "Dekolorace (stahování barvy)", "price": "od 1200" },
-          { "name": "Pánský střih", "price": "od 500" },
-          { "name": "Dětský střih (děti do 6 let)", "price": "300" }
-        ]
-      }
-    },
-    "other": "*Ceny jsou orientační, odvíjí se od spotřeby materiálu."
-  },
-  {
-    "name": "Naina Hontar",
-    "specialization": "Kadeřník-kolorista",
-    "photoIndex": "hontar",
-    "contacts": { "phone": "+420776274140", "email": "" },
-    "socials": { "fb": "", "instagram": "", "tiktok": "" },
-    "price_list": {
-      "kadern_sluzby": {
-        "name": "Kadeřnické služby",
-        "services": [
-          { "name": "Dámský střih (kompletní služba)", "price": "od 650" },
-          { "name": "Foukaná", "price": "od 450" },
-          { "name": "Barva", "price": "od 700" },
-          { "name": "Melír", "price": "od 1100" },
-          { "name": "Balayage", "price": "od 2500" },
-          { "name": "Airtouch", "price": "od 2500" },
-          { "name": "Dekolorace (stahování barvy)", "price": "od 1200" },
-          {
-            "name": "Ošetření \"Experience Reconstruct\"",
-            "price": "od 800"
-          },
-          { "name": "Pánský střih", "price": "500" },
-          { "name": "Dětský střih (děti do 10 let)", "price": "300" }
-        ]
-      }
-    },
-    "other": "*Ceny jsou orientační, odvíjí se od spotřeby materiálu."
-  },
-  {
-    "name": "Iveta Janečková",
-    "specialization": "Kadeřnice",
-    "photoIndex": "janeckova",
-    "contacts": { "phone": "+420737335868", "email": "" },
-    "socials": { "fb": "", "instagram": "", "tiktok": "" },
-    "price_list": {
-      "kadern_sluzby": {
-        "name": "Kadeřnické služby",
-        "services": [
-          { "name": "Dámský střih (kompletní služba)", "price": "od 650" },
-          { "name": "Foukaná", "price": "od 450" },
-          { "name": "Barva", "price": "od 650" },
-          { "name": "Melír", "price": "od 1100" },
-          { "name": "Balayage", "price": "od 2500" },
-          { "name": "Airtouch", "price": "od 2000" },
-          { "name": "Dekolorace (stahování barvy)", "price": "od 1200" },
-          { "name": "Pánský střih", "price": "od 350" },
-          { "name": "Dětský střih (děti do 6 let)", "price": "250" }
         ]
       }
     },
@@ -163,48 +88,35 @@
     "other": ""
   },
   {
-    "name": "Ilona Pecinova",
-    "specialization": "Prodlužování vlasů, <br/> kadeřnické služby",
-    "photoIndex": "pecinova",
-    "contacts": { "phone": "+420733167557", "email": "" },
-    "socials": {
-      "fb": "https://www.facebook.com/goodhaircz",
-      "instagram": "https://www.instagram.com/goodhaircz/",
-      "tiktok": "https://www.tiktok.com/@goodhaircz?fbclid=IwAR2S4UqNfsk6CvdVWbmlwVffHyxQsUtTi_xIHS0Nd7CTsERcUijiIqaMGVs"
-    },
-    "price_list": {
-      "kadern_sluzby": {
-        "name": "Kadeřnické služby",
-        "services": [
-          {
-            "name": "Kadeřnické služby",
-            "price": "ceník na vyžádání"
-          },
-          {
-            "name": "Prodlužování vlasů Goodhair",
-            "price": "ceník na vyžádání"
-          }
-        ]
-      }
-    },
-    "other": ""
-  },
-  {
-    "name": "Elena Bocan",
+    "name": "Marina Ahrenič",
     "specialization": "Kadeřnice",
-    "photoIndex": "bocan",
-    "contacts": { "phone": "+420774074606", "email": "" },
-    "socials": { "fb": "", "instagram": "", "tiktok": "" },
+    "photoIndex": "ahrenic",
+    "contacts": { "phone": "+420603729585", "email": "" },
+    "socials": {
+      "fb": "https://www.facebook.com/profile.php?id=100005087111884",
+      "instagram": "https://www.instagram.com/marina_vlasy/",
+      "tiktok": ""
+    },
     "price_list": {
       "kadern_sluzby": {
         "name": "Kadeřnické služby",
         "services": [
-          { "name": "Dámský střih (kompletní služba)", "price": "od 650" },
+          { "name": "Dámský střih (kompletní služba)", "price": "700 - 1200" },
           { "name": "Foukaná", "price": "od 450" },
-          { "name": "Barva + střih", "price": "od 1300" },
-          { "name": "Melír", "price": "od 1200 až 2500" },
-          { "name": "Pánský střih", "price": "500" },
-          { "name": "Dětský střih (do 10 let)", "price": "300" }
+          { "name": "Barva", "price": "od 1400" },
+          { "name": "Melír", "price": "1200 - 2500" },
+          { "name": "Balayage", "price": "2500 - 4500" },
+          { "name": "Airtouch", "price": "2500 - 4500" },
+          { "name": "Dekolorace (stahování barvy)", "price": "1700 - 3900" },
+          { "name": "Ošetření \"RESTRUCTURE\"", "price": "800 - 1500" },
+          {
+            "name": "Smoothing system (nová metoda vyhlazení vlasů)",
+            "price": "od 1900"
+          },
+          { "name": "Natáčení vlasů", "price": "od 500" },
+          { "name": "Společensky účes", "price": "1500 - 2500" },
+          { "name": "Pánský střih", "price": "400" },
+          { "name": "Dětský střih", "price": "300" }
         ]
       }
     },

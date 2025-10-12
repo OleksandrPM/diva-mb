@@ -27,7 +27,14 @@ function buildFilteredTeamList(servise) {
 function buildTeamList(team) {
   const teamList = team
     .map((member) => {
-      const master = { ...member, photo: teamPhotos[member.photoIndex] };
+      const photo = teamPhotos[member.photoIndex]
+        ? teamPhotos[member.photoIndex]
+        : { def: null, x1: null, x2: null };
+
+      const master = {
+        ...member,
+        photo,
+      };
 
       return `<li class="team__item">${buildMasterContainer(master)}</li>`;
     })

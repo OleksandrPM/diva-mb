@@ -96,7 +96,3 @@ function buildShowInfoBtn(id) {
     </svg>
   </button>`;
 }
-
-function getPhotoIndex(photoName, photos) {
-  return photos.findIndex((photo) => photo.toString().includes(photoName));
-}
