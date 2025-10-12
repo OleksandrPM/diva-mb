@@ -148,5 +148,40 @@
       }
     },
     "other": "*Ceny jsou orientační, odvíjí se od spotřeby materiálu."
+  },
+  {
+    "name": "Olha Dolynska",
+    "specialization": "Kadeřnice",
+    "photoIndex": "dolynska",
+    "contacts": { "phone": "+420608218848", "email": "dolinska1980@gmail.com" },
+    "socials": {
+      "fb": "",
+      "instagram": "https://www.instagram.com/o.dolynska_/",
+      "tiktok": ""
+    },
+    "price_list": {
+      "kadern_sluzby": {
+        "name": "Kadeřnické služby",
+        "services": [
+          { "name": "Dámský střih (kompletní služba)", "price": "700 - 1200" },
+          { "name": "Foukaná", "price": "od 450" },
+          { "name": "Barva", "price": "od 1400" },
+          { "name": "Melír", "price": "1200 - 2500" },
+          { "name": "Balayage", "price": "2500 - 4500" },
+          { "name": "Airtouch", "price": "2500 - 4500" },
+          { "name": "Dekolorace (stahování barvy)", "price": "1700 - 3900" },
+          { "name": "Ošetření \"RESTRUCTURE\"", "price": "800 - 1500" },
+          {
+            "name": "Smoothing system (nová metoda vyhlazení vlasů)",
+            "price": "od 1900"
+          },
+          { "name": "Natáčení vlasů", "price": "od 500" },
+          { "name": "Společensky účes", "price": "1500 - 2500" },
+          { "name": "Pánský střih", "price": "400" },
+          { "name": "Dětský střih", "price": "300" }
+        ]
+      }
+    },
+    "other": "*Ceny jsou orientační, odvíjí se od spotřeby materiálu."
   }
 ]
