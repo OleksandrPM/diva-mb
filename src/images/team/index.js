@@ -4,24 +4,6 @@ const trach = {
   x2: new URL("./x2/trach_x2.webp", import.meta.url),
 };
 
-const bondar = {
-  def: new URL("./default/bondar.jpg", import.meta.url),
-  x1: new URL("./x1/bondar_x1.webp", import.meta.url),
-  x2: new URL("./x2/bondar_x2.webp", import.meta.url),
-};
-
-const hontar = {
-  def: new URL("./default/hontar.jpg", import.meta.url),
-  x1: new URL("./x1/hontar_x1.webp", import.meta.url),
-  x2: new URL("./x2/hontar_x2.webp", import.meta.url),
-};
-
-const janeckova = {
-  def: new URL("./default/janeckova.jpg", import.meta.url),
-  x1: new URL("./x1/janeckova_x1.webp", import.meta.url),
-  x2: new URL("./x2/janeckova_x2.webp", import.meta.url),
-};
-
 const khotynenko = {
   def: new URL("./default/khotynenko.jpg", import.meta.url),
   x1: new URL("./x1/khotynenko_x1.webp", import.meta.url),
@@ -40,23 +22,27 @@ const volfova = {
   x2: new URL("./x2/volfova_x2.webp", import.meta.url),
 };
 
-const bocan = {
-  def: new URL("./default/bocan.jpg", import.meta.url),
-  x1: new URL("./x1/bocan_x1.webp", import.meta.url),
-  x2: new URL("./x2/bocan_x2.webp", import.meta.url),
+const ahrenic = {
+  def: new URL("./default/ahrenic.jpg", import.meta.url),
+  x1: new URL("./x1/ahrenic_x1.webp", import.meta.url),
+  x2: new URL("./x2/ahrenic_x2.webp", import.meta.url),
+};
+
+const dolynska = {
+  def: new URL("./default/dolynska.jpg", import.meta.url),
+  x1: new URL("./x1/dolynska_x1.webp", import.meta.url),
+  x2: new URL("./x2/dolynska_x2.webp", import.meta.url),
 };
 
 const avatar = new URL("./girl-profile.png", import.meta.url);
 
 const teamPhotos = {
   trach,
-  bondar,
-  hontar,
-  janeckova,
   khotynenko,
   pecinova,
   volfova,
-  bocan,
+  ahrenic,
+  dolynska,
 };
 
 export { teamPhotos, avatar };
