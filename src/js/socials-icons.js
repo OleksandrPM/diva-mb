@@ -7,8 +7,8 @@ const iconsSubPaths = {
 };
 
 export function buildSocialsList(socials) {
-  const networkList = Object.keys(socials);
-  const filteredNetworkList = networkList.filter((name) => socials[name]);
+  const socialsKeys = Object.keys(socials);
+  const filteredNetworkList = socialsKeys.filter((key) => socials[key]);
 
   if (filteredNetworkList.length !== 0) {
     const items = filteredNetworkList
@@ -16,7 +16,7 @@ export function buildSocialsList(socials) {
         return `<li><a href="${
           socials[network]
         }" target="_blank" rel="noopener noreferrer" class="socials__link" title="social">${buildIcon(
-          getIconLink(network)
+          getIconHref(network)
         )}</a></li>`;
       })
       .join("");
@@ -29,7 +29,7 @@ export function buildSocialsList(socials) {
   }
 }
 
-function getIconLink(network) {
+function getIconHref(network) {
   switch (network) {
     case "fb":
       return `${icons}${iconsSubPaths.fb}`;

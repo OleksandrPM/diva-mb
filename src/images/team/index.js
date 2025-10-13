@@ -1,3 +1,9 @@
+/* It's important to name the corresponding variables 
+based on the "photoIndex" value in "team.json" file. 
+The images must be stored in strict folders 
+and follow strict naming conventions.
+ */
+
 const trach = {
   def: new URL("./default/trach.jpg", import.meta.url),
   x1: new URL("./x1/trach_x1.webp", import.meta.url),
@@ -34,8 +40,6 @@ const dolynska = {
   x2: new URL("./x2/dolynska_x2.webp", import.meta.url),
 };
 
-const avatar = new URL("./girl-profile.png", import.meta.url);
-
 const teamPhotos = {
   trach,
   khotynenko,
@@ -44,5 +48,7 @@ const teamPhotos = {
   ahrenic,
   dolynska,
 };
+
+const avatar = new URL("./girl-profile.png", import.meta.url);
 
 export { teamPhotos, avatar };

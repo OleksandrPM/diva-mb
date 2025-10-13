@@ -1,6 +1,6 @@
 import team from "../data/team.json";
 import buildMasterContainer from "./team-card";
-import { teamPhotos } from "../images/team/";
+import { teamPhotos } from "../images";
 
 const teamModalTitle = "Vyberte si mistra:";
 
