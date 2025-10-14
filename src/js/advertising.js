@@ -20,8 +20,8 @@ function buildAdvertisingMarkup(advObject) {
   const { phone, email, text } = advObject;
 
   const textMarkup = `<p>${text}</p>`;
-  const phoneLinkMarkup = `<p>Tel.: <a href="tel:${phone}">${phone}</a></p>`;
-  const emailLinkMarkup = `<p>Email.: <a href="mailto:${email}">${email}</a></p>`;
+  const phoneLinkMarkup = `<p>☎️: <a href="tel:${phone}">${phone}</a></p>`;
+  const emailLinkMarkup = `<p>📧: <a href="mailto:${email}">${email}</a></p>`;
 
   contentEl.innerHTML = "";
 
