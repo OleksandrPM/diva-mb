@@ -1,16 +1,16 @@
-@use "../utils/variables" as *;
+@use "../utils/variables" as var;
 
 .team__gallery {
   & .team__list {
     display: grid;
     grid-row-gap: 20px;
 
-    @media screen and (min-width: $tablet-width) {
+    @media screen and (min-width: var.$tablet-width) {
       grid-template-columns: repeat(2, 1fr);
       grid-column-gap: 20px;
     }
 
-    @media screen and (min-width: $desktop-width) {
+    @media screen and (min-width: var.$desktop-width) {
       grid-template-columns: repeat(4, 1fr);
     }
   }
@@ -18,11 +18,11 @@
   & .team__item {
     width: 100%;
 
-    @media screen and (min-width: $tablet-width) {
+    @media screen and (min-width: var.$tablet-width) {
       width: 354px;
     }
 
-    @media screen and (min-width: $desktop-width) {
+    @media screen and (min-width: var.$desktop-width) {
       width: 290px;
     }
   }

@@ -1,4 +1,4 @@
-@use "../utils/variables" as *;
+@use "../utils/variables" as var;
 
 .cooperation__list {
   display: flex;
@@ -6,12 +6,12 @@
   row-gap: 20px;
   flex-wrap: wrap;
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: var.$tablet-width) {
     column-gap: 5%;
     row-gap: 30px;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @media screen and (min-width: var.$desktop-width) {
     column-gap: 2%;
     flex-wrap: nowrap;
   }
@@ -28,29 +28,29 @@
   border-radius: 10px;
   overflow: hidden;
 
-  transition-duration: $normal-transition-duration;
-  transition-timing-function: $normal-transition-timing-function;
+  transition-duration: var.$normal-transition-duration;
+  transition-timing-function: var.$normal-transition-timing-function;
   transition-property: box-shadow, outline;
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: var.$tablet-width) {
     width: 30%;
   }
 
   &:has(.cooperation__link:active) {
-    outline: solid 1px $main-text-color;
-    box-shadow: 0 0 10px $active-color;
+    outline: solid 1px var.$main-text-color;
+    box-shadow: 0 0 10px var.$active-color;
   }
 
   @media (hover: hover) {
     &:has(.cooperation__link:hover) {
-      outline: solid 1px $main-text-color;
-      box-shadow: 0 0 10px $active-color;
+      outline: solid 1px var.$main-text-color;
+      box-shadow: 0 0 10px var.$active-color;
     }
   }
 
   &:has(.cooperation__link:focus-visible) {
-    outline: solid 1px $main-text-color;
-    box-shadow: 0 0 10px $active-color;
+    outline: solid 1px var.$main-text-color;
+    box-shadow: 0 0 10px var.$active-color;
   }
 }
 

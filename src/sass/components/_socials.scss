@@ -1,4 +1,4 @@
-@use "../utils/variables" as *;
+@use "../utils/variables" as var;
 
 .socials {
   display: flex;
@@ -11,25 +11,25 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: $main-text-color;
+  background-color: var.$main-text-color;
 
   &:active {
-    background-color: $active-color;
-    box-shadow: 0 0 5px $active-color;
+    background-color: var.$active-color;
+    box-shadow: 0 0 5px var.$active-color;
     outline: none;
   }
 
   @media (hover: hover) {
     &:hover {
-      background-color: $active-color;
-      box-shadow: 0 0 5px $active-color;
+      background-color: var.$active-color;
+      box-shadow: 0 0 5px var.$active-color;
     }
   }
 
   &:focus-visible {
     outline: none;
-    background-color: $active-color;
-    box-shadow: 0 0 5px $active-color;
+    background-color: var.$active-color;
+    box-shadow: 0 0 5px var.$active-color;
   }
 }
 

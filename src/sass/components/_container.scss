@@ -1,4 +1,4 @@
-@use "../utils/variables" as *;
+@use "../utils/variables" as var;
 
 .container {
   margin-left: auto;
@@ -8,25 +8,25 @@
   padding-top: 20px;
   padding-bottom: 20px;
 
-  @media screen and (max-width: calc($mobile-width - 0.02px)) {
+  @media screen and (max-width: calc(var.$mobile-width - 0.02px)) {
     width: 100%;
   }
 
   // Phone styles
-  @media screen and (min-width: $mobile-width) {
-    width: $mobile-width;
+  @media screen and (min-width: var.$mobile-width) {
+    width: var.$mobile-width;
   }
 
   // Tablet styles
-  @media screen and (min-width: $tablet-width) {
-    width: $tablet-width;
+  @media screen and (min-width: var.$tablet-width) {
+    width: var.$tablet-width;
     padding-left: 20px;
     padding-right: 20px;
   }
 
   // Desktop styles
-  @media screen and (min-width: $desktop-width) {
-    width: $desktop-width;
+  @media screen and (min-width: var.$desktop-width) {
+    width: var.$desktop-width;
   }
 }
 
@@ -41,11 +41,11 @@
   -webkit-background-clip: text;
   background-clip: text;
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: var.$tablet-width) {
     font-size: 32px;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @media screen and (min-width: var.$desktop-width) {
     font-size: 48px;
   }
 }

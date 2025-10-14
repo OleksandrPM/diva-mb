@@ -1,4 +1,4 @@
-@use "../utils/variables" as *;
+@use "../utils/variables" as var;
 
 .mob-menu {
   z-index: 20;
@@ -9,11 +9,11 @@
   width: 100%;
   height: 100%;
 
-  background-color: $main-background-color;
+  background-color: var.$main-background-color;
 
   transform: translateX(100%);
 
-  transition-duration: $normal-transition-duration;
+  transition-duration: var.$normal-transition-duration;
   transition-timing-function: ease-in-out;
   transition-property: transform;
 
@@ -21,7 +21,7 @@
     transform: translateX(0);
   }
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: var.$tablet-width) {
     display: none;
   }
 }
@@ -53,9 +53,9 @@
 }
 
 .close-menu-icon {
-  fill: $main-text-color;
+  fill: var.$main-text-color;
 
-  transition-duration: $normal-transition-duration;
-  transition-timing-function: $normal-transition-timing-function;
+  transition-duration: var.$normal-transition-duration;
+  transition-timing-function: var.$normal-transition-timing-function;
   transition-property: fill;
 }

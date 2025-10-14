@@ -1,12 +1,12 @@
-@use "../utils/variables" as *;
-@use "../utils/fonts" as *;
+@use "../utils/variables" as var;
+@use "../utils/fonts" as fonts;
 
 .logo {
-  font-family: $secondary-normal-font;
+  font-family: fonts.$secondary-normal-font;
   font-size: 35px;
   -webkit-text-fill-color: transparent;
 
-  background: $shine-gold-background;
+  background: var.$shine-gold-background;
   -webkit-background-clip: text;
   background-clip: text;
   background-size: 100%;
@@ -14,11 +14,11 @@
 
   animation: shine 3s infinite;
 
-  transition-duration: $normal-transition-duration;
-  transition-timing-function: $normal-transition-timing-function;
+  transition-duration: var.$normal-transition-duration;
+  transition-timing-function: var.$normal-transition-timing-function;
   transition-property: background-size;
 
-  @media screen and (min-width: $desktop-width) {
+  @media screen and (min-width: var.$desktop-width) {
     font-size: 50px;
   }
 }
@@ -27,12 +27,12 @@
   padding: 0px 5px;
   border-radius: 5px;
 
-  transition-duration: $normal-transition-duration;
-  transition-timing-function: $normal-transition-timing-function;
+  transition-duration: var.$normal-transition-duration;
+  transition-timing-function: var.$normal-transition-timing-function;
   transition-property: box-shadow;
 
   &:active {
-    background-color: $main-background-color;
+    background-color: var.$main-background-color;
 
     .logo {
       background-size: 270%;
@@ -50,7 +50,7 @@
   }
 
   &:focus-visible {
-    box-shadow: 0 0 5px $active-color;
+    box-shadow: 0 0 5px var.$active-color;
     outline: none;
 
     .logo {

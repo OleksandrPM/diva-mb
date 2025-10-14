@@ -1,4 +1,4 @@
-@use "../utils/variables" as *;
+@use "../utils/variables" as var;
 
 .services {
   width: 100%;
@@ -34,15 +34,15 @@
 
   cursor: pointer;
 
-  transition-duration: $normal-transition-duration;
-  transition-timing-function: $normal-transition-timing-function;
+  transition-duration: var.$normal-transition-duration;
+  transition-timing-function: var.$normal-transition-timing-function;
   transition-property: transform;
 
   &:hover,
   &:focus,
   &:active {
-    color: $active-color;
-    text-shadow: 0 0 5px $active-color;
+    color: var.$active-color;
+    text-shadow: 0 0 5px var.$active-color;
     transform: scaleY(1.2);
     outline: none;
   }
@@ -62,7 +62,7 @@
   transform: translate(-53%, -53%);
   display: none;
 
-  stroke: $main-text-color;
+  stroke: var.$main-text-color;
 
   &.active {
     display: block;
@@ -84,7 +84,7 @@
     width: 100%;
 
     & tr:nth-child(odd) {
-      background-color: $secondary-background-color;
+      background-color: var.$secondary-background-color;
     }
   }
 
@@ -103,7 +103,7 @@
 
   & td,
   & th {
-    border: 1px solid $table-border-color;
+    border: 1px solid var.$table-border-color;
     padding: 8px;
   }
 }

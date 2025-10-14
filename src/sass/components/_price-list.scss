@@ -1,4 +1,4 @@
-@use "../utils/variables" as *;
+@use "../utils/variables" as var;
 
 .price-list {
   width: 98%;
@@ -23,13 +23,13 @@
 
   & thead {
     text-align: center;
-    background-color: $secondary-background-color;
+    background-color: var.$secondary-background-color;
     font-size: larger;
   }
 
   & td,
   & th {
-    border: 1px solid $table-border-color;
+    border: 1px solid var.$table-border-color;
     padding: 8px;
   }
 

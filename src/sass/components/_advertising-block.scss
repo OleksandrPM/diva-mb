@@ -1,4 +1,4 @@
-@use "../utils/variables" as *;
+@use "../utils/variables" as var;
 
 .advertising {
   position: fixed;
@@ -8,17 +8,17 @@
   width: 90vw;
   padding: 10px;
 
-  color: $ad-content-color;
-  background-color: $ad-background-color;
+  color: var.$ad-content-color;
+  background-color: var.$ad-background-color;
   border-radius: 10px;
 
   animation: fade 2s ease-out;
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: var.$tablet-width) {
     width: 40vw;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @media screen and (min-width: var.$desktop-width) {
     width: 25vw;
     font-size: x-large;
   }
@@ -33,17 +33,17 @@
     right: 10px;
     border: none;
     border-radius: 50%;
-    background-color: $ad-background-color;
+    background-color: var.$ad-background-color;
 
-    transition-duration: $normal-transition-duration;
-    transition-timing-function: $normal-transition-timing-function;
+    transition-duration: var.$normal-transition-duration;
+    transition-timing-function: var.$normal-transition-timing-function;
     transition-property: background-color, fill;
 
     &:hover,
     &:focus,
     &:active {
-      background-color: $main-background-color;
-      fill: $ad-inverce-color;
+      background-color: var.$main-background-color;
+      fill: var.$ad-inverce-color;
       outline: none;
     }
   }

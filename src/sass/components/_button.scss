@@ -1,53 +1,53 @@
-@use "../utils/variables" as *;
+@use "../utils/variables" as var;
 
 .button {
-  color: $main-text-color;
-  background-color: $main-background-color;
+  color: var.$main-text-color;
+  background-color: var.$main-background-color;
   border: none;
 
-  transition-duration: $normal-transition-duration;
-  transition-timing-function: $normal-transition-timing-function;
+  transition-duration: var.$normal-transition-duration;
+  transition-timing-function: var.$normal-transition-timing-function;
   transition-property: color, box-shadow, text-shadow;
 
   & svg {
-    fill: $main-text-color;
+    fill: var.$main-text-color;
 
-    transition-duration: $normal-transition-duration;
-    transition-timing-function: $normal-transition-timing-function;
+    transition-duration: var.$normal-transition-duration;
+    transition-timing-function: var.$normal-transition-timing-function;
     transition-property: fill, stroke;
   }
 
   &:active {
-    color: $active-color;
-    box-shadow: 0 0 5px $active-color;
-    text-shadow: 0 0 5px $active-color;
+    color: var.$active-color;
+    box-shadow: 0 0 5px var.$active-color;
+    text-shadow: 0 0 5px var.$active-color;
 
     & svg {
-      fill: $active-color;
-      stroke: $active-color;
+      fill: var.$active-color;
+      stroke: var.$active-color;
     }
   }
 
   &:focus-visible {
-    outline: 1px solid $active-color;
+    outline: 1px solid var.$active-color;
   }
 
   @media (hover: hover) {
     &:hover {
-      color: $active-color;
-      box-shadow: 0 0 5px $active-color;
-      text-shadow: 0 0 5px $active-color;
+      color: var.$active-color;
+      box-shadow: 0 0 5px var.$active-color;
+      text-shadow: 0 0 5px var.$active-color;
 
       & svg {
-        fill: $active-color;
-        stroke: $active-color;
+        fill: var.$active-color;
+        stroke: var.$active-color;
       }
     }
   }
 
   &.book-btn {
     padding: 5 10;
-    border: 1px solid $main-text-color;
+    border: 1px solid var.$main-text-color;
     border-radius: 10px;
   }
 }

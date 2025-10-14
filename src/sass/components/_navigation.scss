@@ -1,14 +1,14 @@
-@use "../utils/variables" as *;
+@use "../utils/variables" as var;
 
 .nav__list {
   display: flex;
 
-  @media screen and (max-width: calc($tablet-width - 0.02px)) {
+  @media screen and (max-width: calc(var.$tablet-width - 0.02px)) {
     flex-direction: column;
     gap: 15px;
   }
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: var.$tablet-width) {
     width: 100%;
     flex-direction: row;
     align-items: center;
@@ -18,11 +18,11 @@
 
 .nav__item {
   text-align: center;
-  @media screen and (max-width: calc($tablet-width - 0.02px)) {
+  @media screen and (max-width: calc(var.$tablet-width - 0.02px)) {
     width: 100%;
   }
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: var.$tablet-width) {
     width: 15%;
   }
 }
@@ -34,75 +34,75 @@
   text-align: center;
   font-size: 2.5rem;
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: var.$tablet-width) {
     display: block;
     width: 100%;
 
     font-size: 12px;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @media screen and (min-width: var.$desktop-width) {
     font-size: 20px;
   }
 
   &:active {
-    color: $active-color;
-    text-shadow: 0 0 5px $active-color;
+    color: var.$active-color;
+    text-shadow: 0 0 5px var.$active-color;
 
-    @media screen and (min-width: $tablet-width) {
-      box-shadow: 0 0 5px $active-color;
+    @media screen and (min-width: var.$tablet-width) {
+      box-shadow: 0 0 5px var.$active-color;
     }
   }
 
   @media (hover: hover) {
     &:hover {
-      color: $active-color;
-      text-shadow: 0 0 5px $active-color;
+      color: var.$active-color;
+      text-shadow: 0 0 5px var.$active-color;
 
-      @media screen and (min-width: $tablet-width) {
-        box-shadow: 0 0 5px $active-color;
+      @media screen and (min-width: var.$tablet-width) {
+        box-shadow: 0 0 5px var.$active-color;
       }
     }
   }
 
   &:focus-visible {
     outline: none;
-    box-shadow: 0 0 5px $active-color;
+    box-shadow: 0 0 5px var.$active-color;
   }
 
   &.active {
-    @media screen and (max-width: calc($tablet-width - 0.02px)) {
-      color: $active-navlink-color;
+    @media screen and (max-width: calc(var.$tablet-width - 0.02px)) {
+      color: var.$active-navlink-color;
     }
 
-    @media screen and (min-width: $tablet-width) {
-      color: $active-navlink-color;
-      box-shadow: 0 0 5px $active-navlink-color;
+    @media screen and (min-width: var.$tablet-width) {
+      color: var.$active-navlink-color;
+      box-shadow: 0 0 5px var.$active-navlink-color;
     }
 
     &:active {
-      color: $active-color;
-      text-shadow: 0 0 5px $active-color;
+      color: var.$active-color;
+      text-shadow: 0 0 5px var.$active-color;
 
-      @media screen and (min-width: $tablet-width) {
-        box-shadow: 0 0 5px $active-color;
+      @media screen and (min-width: var.$tablet-width) {
+        box-shadow: 0 0 5px var.$active-color;
       }
     }
 
     @media (hover: hover) {
       &:hover {
-        color: $active-color;
-        text-shadow: 0 0 5px $active-color;
+        color: var.$active-color;
+        text-shadow: 0 0 5px var.$active-color;
 
-        @media screen and (min-width: $tablet-width) {
-          box-shadow: 0 0 5px $active-color;
+        @media screen and (min-width: var.$tablet-width) {
+          box-shadow: 0 0 5px var.$active-color;
         }
       }
     }
 
     &:focus-visible {
       outline: none;
-      box-shadow: 0 0 5px $active-color;
+      box-shadow: 0 0 5px var.$active-color;
     }
   }
 }

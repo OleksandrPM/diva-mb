@@ -1,34 +1,34 @@
-@use "../utils/variables" as *;
+@use "../utils/variables" as var;
 
 .contacts__block {
   display: flex;
   flex-direction: column;
   gap: 20px;
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: var.$tablet-width) {
     flex-direction: row;
   }
 
   & .contacts__map {
     display: block;
     width: 100%;
-    height: calc($mobile-width * 0.6);
+    height: calc(var.$mobile-width * 0.6);
 
     border-radius: 10px;
     overflow: hidden;
 
-    @media screen and (min-width: $tablet-width) {
+    @media screen and (min-width: var.$tablet-width) {
       width: 45%;
-      height: calc($tablet-width * 0.3);
+      height: calc(var.$tablet-width * 0.3);
     }
 
-    @media screen and (min-width: $desktop-width) {
-      height: calc($desktop-width * 0.3);
+    @media screen and (min-width: var.$desktop-width) {
+      height: calc(var.$desktop-width * 0.3);
     }
 
     @media (hover: hover) {
       &:hover {
-        box-shadow: 0 0 10px $active-color;
+        box-shadow: 0 0 10px var.$active-color;
       }
     }
   }
@@ -37,7 +37,7 @@
 .contacts__content {
   text-align: center;
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: var.$tablet-width) {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -47,11 +47,11 @@
   & address {
     margin-bottom: 20px;
 
-    @media screen and (min-width: $tablet-width) {
+    @media screen and (min-width: var.$tablet-width) {
       font-size: 18px;
     }
 
-    @media screen and (min-width: $desktop-width) {
+    @media screen and (min-width: var.$desktop-width) {
       font-size: 24px;
       margin-bottom: 40px;
     }
@@ -67,11 +67,11 @@
     -webkit-background-clip: text;
     background-clip: text;
 
-    @media screen and (min-width: $tablet-width) {
+    @media screen and (min-width: var.$tablet-width) {
       font-size: 22px;
     }
 
-    @media screen and (min-width: $desktop-width) {
+    @media screen and (min-width: var.$desktop-width) {
       margin-bottom: 20px;
       font-size: 26px;
     }

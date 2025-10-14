@@ -1,4 +1,4 @@
-@use "../utils/variables" as *;
+@use "../utils/variables" as var;
 
 .backdrop {
   position: fixed;
@@ -8,10 +8,10 @@
   height: 100vh;
   z-index: 30;
 
-  background-color: rgba($modal-background-color, 0.8);
+  background-color: rgba(var.$modal-background-color, 0.8);
 
-  transition-duration: $normal-transition-duration;
-  transition-timing-function: $normal-transition-timing-function;
+  transition-duration: var.$normal-transition-duration;
+  transition-timing-function: var.$normal-transition-timing-function;
   transition-property: visibility, opacity;
 
   &--is-hidden {
@@ -34,11 +34,11 @@
   padding-bottom: 10px;
   overflow: hidden;
 
-  color: $main-text-color;
-  background-color: $main-background-color;
+  color: var.$main-text-color;
+  background-color: var.$main-background-color;
   border-radius: 10px;
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: var.$tablet-width) {
     top: 10vh;
     height: 80vh;
   }
@@ -71,7 +71,7 @@
   padding-left: 10px;
   padding-right: 10px;
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: var.$tablet-width) {
     height: 70vh;
   }
 
@@ -83,13 +83,13 @@
     margin-left: auto;
     margin-right: auto;
 
-    @media screen and (max-width: calc($mobile-width - 0.02px)) {
+    @media screen and (max-width: calc(var.$mobile-width - 0.02px)) {
       & .master-container__content {
         padding-top: 170%;
       }
     }
 
-    @media screen and (min-width: $mobile-width) {
+    @media screen and (min-width: var.$mobile-width) {
       max-width: 355px;
     }
   }

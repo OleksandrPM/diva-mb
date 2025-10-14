@@ -1,5 +1,5 @@
-@use "../utils/variables" as *;
-@use "../utils/fonts" as *;
+@use "../utils/variables" as var;
+@use "../utils/fonts" as fonts;
 
 .master-container {
   position: relative;
@@ -11,7 +11,7 @@
   padding-bottom: 70px;
 
   border-radius: 10px;
-  border-color: $main-text-color;
+  border-color: var.$main-text-color;
   border-style: solid;
   border-width: 1px;
   overflow: hidden;
@@ -24,15 +24,15 @@
     padding-top: 167%;
     overflow: hidden;
 
-    @media screen and (min-width: $mobile-width) {
+    @media screen and (min-width: var.$mobile-width) {
       padding-top: 160%;
     }
 
-    @media screen and (min-width: $tablet-width) {
+    @media screen and (min-width: var.$tablet-width) {
       padding-top: 160%;
     }
 
-    @media screen and (min-width: $desktop-width) {
+    @media screen and (min-width: var.$desktop-width) {
       padding-top: 169%;
     }
   }
@@ -41,8 +41,8 @@
     position: absolute;
     top: -100%;
     left: 0;
-    transition-duration: $normal-transition-duration;
-    transition-timing-function: $normal-transition-timing-function;
+    transition-duration: var.$normal-transition-duration;
+    transition-timing-function: var.$normal-transition-timing-function;
     transition-property: top;
   }
 
@@ -54,8 +54,8 @@
     position: absolute;
     top: 100%;
     left: 0;
-    transition-duration: $normal-transition-duration;
-    transition-timing-function: $normal-transition-timing-function;
+    transition-duration: var.$normal-transition-duration;
+    transition-timing-function: var.$normal-transition-timing-function;
     transition-property: top;
   }
 
@@ -95,14 +95,14 @@
   padding-right: 20px;
   padding-top: 0;
   padding-bottom: 0;
-  border: 1px solid $main-text-color;
+  border: 1px solid var.$main-text-color;
   border-radius: 5px;
 
-  font-family: $main-bold-font;
+  font-family: fonts.$main-bold-font;
 
   & .show-info-btn__icon {
-    transition-duration: $normal-transition-duration;
-    transition-timing-function: $normal-transition-timing-function;
+    transition-duration: var.$normal-transition-duration;
+    transition-timing-function: var.$normal-transition-timing-function;
     transition-property: transform;
 
     &.active {

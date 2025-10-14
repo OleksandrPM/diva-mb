@@ -1,10 +1,10 @@
-@use "../utils/variables" as *;
+@use "../utils/variables" as var;
 
 footer {
   padding-top: 5px;
   padding-bottom: 5px;
 
-  border: 1px solid $active-color;
+  border: 1px solid var.$active-color;
   border-radius: 8px 8px 0px 0px;
   border-bottom: none;
   border-left: none;
@@ -20,11 +20,11 @@ footer {
 
     font-size: 12px;
 
-    @media screen and (min-width: $tablet-width) {
+    @media screen and (min-width: var.$tablet-width) {
       font-size: 12px;
     }
 
-    @media screen and (min-width: $desktop-width) {
+    @media screen and (min-width: var.$desktop-width) {
       font-size: 20px;
     }
   }
@@ -33,21 +33,21 @@ footer {
     text-decoration: underline;
 
     &:active {
-      color: $active-color;
-      text-shadow: 0 0 5px $active-color;
+      color: var.$active-color;
+      text-shadow: 0 0 5px var.$active-color;
     }
 
     @media (hover: hover) {
       &:hover {
-        color: $active-color;
-        text-shadow: 0 0 5px $active-color;
+        color: var.$active-color;
+        text-shadow: 0 0 5px var.$active-color;
       }
     }
 
     &:focus-visible {
-      outline: solid 1px $active-color;
-      color: $active-color;
-      text-shadow: 0 0 5px $active-color;
+      outline: solid 1px var.$active-color;
+      color: var.$active-color;
+      text-shadow: 0 0 5px var.$active-color;
     }
   }
 }

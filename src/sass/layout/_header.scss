@@ -1,4 +1,4 @@
-@use "../utils/variables" as *;
+@use "../utils/variables" as var;
 
 .head {
   z-index: 10;
@@ -7,22 +7,22 @@
   padding-top: 10px;
   padding-bottom: 10px;
 
-  border: 1px solid $active-color;
+  border: 1px solid var.$active-color;
   border-radius: 0px 0px 8px 8px;
   border-top: none;
   border-left: none;
   border-right: none;
 
-  background-color: $main-background-color;
+  background-color: var.$main-background-color;
 
-  transition-duration: $normal-transition-duration;
+  transition-duration: var.$normal-transition-duration;
   transition-timing-function: ease-out;
   transition-property: background-color, backdrop-filter;
 
   &.sticky {
     position: fixed;
     top: 0;
-    background-color: rgba($main-background-color, 0.9);
+    background-color: rgba(var.$main-background-color, 0.9);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
   }
@@ -45,11 +45,11 @@ at the top of the page (position:fixed and top:0) */
 }
 
 .head__nav {
-  @media screen and (max-width: calc($tablet-width - 0.02px)) {
+  @media screen and (max-width: calc(var.$tablet-width - 0.02px)) {
     display: none;
   }
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: var.$tablet-width) {
     display: flex;
     width: 70%;
   }
@@ -58,11 +58,11 @@ at the top of the page (position:fixed and top:0) */
 .head__book-btn {
   font-size: 1.2rem;
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: var.$tablet-width) {
     font-size: 14px;
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @media screen and (min-width: var.$desktop-width) {
     font-size: 24px;
   }
 }
@@ -71,7 +71,7 @@ at the top of the page (position:fixed and top:0) */
   padding: 0;
   border-radius: 5px;
   background-color: inherit;
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: var.$tablet-width) {
     display: none;
   }
 }
