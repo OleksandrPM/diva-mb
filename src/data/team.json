@@ -4,7 +4,11 @@
     "specialization": "Majitelka studia, <br/> kadeřník-stylista",
     "photoIndex": "volfova",
     "contacts": { "phone": "+420773939303", "email": "" },
-    "socials": { "fb": "", "instagram": "", "tiktok": "" },
+    "socials": {
+      "fb": "",
+      "instagram": "https://www.instagram.com/studiodivamb/",
+      "tiktok": ""
+    },
     "price_list": {
       "kadern_sluzby": {
         "name": "Kadeřnické služby",
