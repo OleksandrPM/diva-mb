@@ -10,12 +10,6 @@ const trach = {
   x2: new URL("./x2/trach_x2.webp", import.meta.url),
 };
 
-const khotynenko = {
-  def: new URL("./default/khotynenko.jpg", import.meta.url),
-  x1: new URL("./x1/khotynenko_x1.webp", import.meta.url),
-  x2: new URL("./x2/khotynenko_x2.webp", import.meta.url),
-};
-
 const pecinova = {
   def: new URL("./default/pecinova.jpg", import.meta.url),
   x1: new URL("./x1/pecinova_x1.webp", import.meta.url),
@@ -42,7 +36,6 @@ const dolynska = {
 
 const teamPhotos = {
   trach,
-  khotynenko,
   pecinova,
   volfova,
   ahrenic,
