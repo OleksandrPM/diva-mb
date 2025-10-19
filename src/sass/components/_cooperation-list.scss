@@ -2,18 +2,12 @@
 
 .cooperation__list {
   display: flex;
-  column-gap: 10%;
+  justify-content: space-between;
   row-gap: 20px;
   flex-wrap: wrap;
 
   @media screen and (min-width: var.$tablet-width) {
-    column-gap: 5%;
     row-gap: 30px;
-  }
-
-  @media screen and (min-width: var.$desktop-width) {
-    column-gap: 2%;
-    flex-wrap: nowrap;
   }
 }
 
