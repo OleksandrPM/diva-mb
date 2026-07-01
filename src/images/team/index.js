@@ -10,12 +10,6 @@ const trach = {
   x2: new URL("./x2/trach_x2.webp", import.meta.url),
 };
 
-const pecinova = {
-  def: new URL("./default/pecinova.jpg", import.meta.url),
-  x1: new URL("./x1/pecinova_x1.webp", import.meta.url),
-  x2: new URL("./x2/pecinova_x2.webp", import.meta.url),
-};
-
 const volfova = {
   def: new URL("./default/volfova.jpg", import.meta.url),
   x1: new URL("./x1/volfova_x1.webp", import.meta.url),
@@ -28,18 +22,17 @@ const ahrenic = {
   x2: new URL("./x2/ahrenic_x2.webp", import.meta.url),
 };
 
-const dolynska = {
-  def: new URL("./default/dolynska.jpg", import.meta.url),
-  x1: new URL("./x1/dolynska_x1.webp", import.meta.url),
-  x2: new URL("./x2/dolynska_x2.webp", import.meta.url),
+const kropaleva = {
+  def: new URL("./default/kropaleva.jpg", import.meta.url),
+  x1: new URL("./x1/kropaleva_x1.webp", import.meta.url),
+  x2: new URL("./x2/kropaleva_x2.webp", import.meta.url),
 };
 
 const teamPhotos = {
   trach,
-  pecinova,
   volfova,
   ahrenic,
-  dolynska,
+  kropaleva,
 };
 
 const avatar = new URL("./girl-profile.png", import.meta.url);
