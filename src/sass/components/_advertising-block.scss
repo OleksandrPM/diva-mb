@@ -6,6 +6,7 @@
   right: 5vw;
   bottom: 5vh;
   width: 90vw;
+  max-width: 350px;
   padding: 10px;
 
   color: var.$ad-content-color;
@@ -18,14 +19,12 @@
     width: 40vw;
   }
 
-  @media screen and (min-width: var.$desktop-width) {
-    width: 25vw;
-    font-size: x-large;
-  }
-
   &__title {
     margin-bottom: 10px;
     text-transform: uppercase;
+
+    @media screen and (min-width: var.$desktop-width) {
+    }
   }
 
   &__close-button {
