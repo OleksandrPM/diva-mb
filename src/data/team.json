@@ -113,5 +113,38 @@
       }
     },
     "other": ""
+  },
+  {
+    "name": "Yelyzaveta Orel",
+    "specialization": "Stylistka řas",
+    "photoIndex": "orel",
+    "contacts": { "phone": "+420737112269", "email": "" },
+    "socials": {
+      "fb": "",
+      "instagram": "https://www.instagram.com/yeliz_eyelashes",
+      "tiktok": ""
+    },
+    "price_list": {
+      "rasove_sluzby": {
+        "name": "Rasové služby",
+        "services": [
+          { "name": "Prodluzování 1D", "price": "700" },
+          { "name": "Prodluzování 2D", "price": "800" },
+          { "name": "Prodluzování 3D", "price": "900" },
+          { "name": "Prodluzování 4D", "price": "1000" },
+          { "name": "Prodluzování 5D", "price": "1100" },
+          { "name": "Odstranění práce jiného stylisty", "price": "100" },
+          { "name": "Přechod / mokré řasy (wet effect)", "price": "100" },
+          { "name": "Barvení obočí", "price": "200" },
+          { "name": "Barvení obočí a korekce", "price": "300" },
+          { "name": "Laminace obočí + barvení + korekce", "price": "500" },
+          {
+            "name": "Depilace voskem nad horním rtem / obočí (jedna zóna)",
+            "price": "100"
+          }
+        ]
+      }
+    },
+    "other": "*Ceny jsou orientační, odvíjí se od spotřeby materiálu."
   }
 ]

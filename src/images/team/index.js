@@ -28,11 +28,18 @@ const kropaleva = {
   x2: new URL("./x2/kropaleva_x2.webp", import.meta.url),
 };
 
+const orel = {
+  def: new URL("./default/orel.jpg", import.meta.url),
+  x1: new URL("./x1/orel_x1.webp", import.meta.url),
+  x2: new URL("./x2/orel_x2.webp", import.meta.url),
+};
+
 const teamPhotos = {
   trach,
   volfova,
   ahrenic,
   kropaleva,
+  orel,
 };
 
 const avatar = new URL("./girl-profile.png", import.meta.url);

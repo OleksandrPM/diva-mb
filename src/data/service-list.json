@@ -55,5 +55,24 @@
     "services": [
       { "name": "Kosmetická konzultace", "price": "ceník na vyžádání" }
     ]
+  },
+  "rasove_sluzby": {
+    "name": "Rasové služby",
+    "services": [
+      { "name": "Prodluzování 1D", "price": "700 Kč" },
+      { "name": "Prodluzování 2D", "price": "800 Kč" },
+      { "name": "Prodluzování 3D", "price": "900 Kč" },
+      { "name": "Prodluzování 4D", "price": "1000 Kč" },
+      { "name": "Prodluzování 5D", "price": "1100 Kč" },
+      { "name": "Odstranění práce jiného stylisty", "price": "100 Kč" },
+      { "name": "Přechod / mokré řasy (wet effect)", "price": "100 Kč" },
+      { "name": "Barvení obočí", "price": "200 Kč" },
+      { "name": "Barvení obočí a korekce", "price": "300 Kč" },
+      { "name": "Laminace obočí + barvení + korekce", "price": "500 Kč" },
+      {
+        "name": "Depilace voskem nad horním rtem / obočí (jedna zóna)",
+        "price": "100 Kč"
+      }
+    ]
   }
 }
