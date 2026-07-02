@@ -71,7 +71,7 @@
   },
   {
     "name": "Valeriia Kropaleva",
-    "specialization": "Kadeřnice",
+    "specialization": "Blond & Hair Extensions Expert",
     "photoIndex": "kropaleva",
     "contacts": { "phone": "+420776709176", "email": "" },
     "socials": {
@@ -99,24 +99,8 @@
     "other": "*Ceny jsou orientační, odvíjí se od spotřeby materiálu."
   },
   {
-    "name": "Tetiana Trach",
-    "specialization": "Nezávislá kosmetická poradkyně, <br/> vizážistka společnosti \"Mary Kay\"",
-    "photoIndex": "trach",
-    "contacts": { "phone": "+420774049282", "email": "" },
-    "socials": { "fb": "", "instagram": "", "tiktok": "" },
-    "price_list": {
-      "kosm_konsultace": {
-        "name": "Kosmetické konzultace",
-        "services": [
-          { "name": "Kosmetická konzultace", "price": "ceník na vyžádání" }
-        ]
-      }
-    },
-    "other": ""
-  },
-  {
     "name": "Yelyzaveta Orel",
-    "specialization": "Stylistka řas",
+    "specialization": "Lash Artist",
     "photoIndex": "orel",
     "contacts": { "phone": "+420737112269", "email": "" },
     "socials": {
@@ -126,7 +110,7 @@
     },
     "price_list": {
       "rasove_sluzby": {
-        "name": "Rasové služby",
+        "name": "Řasy a obočí",
         "services": [
           { "name": "Prodluzování 1D", "price": "700" },
           { "name": "Prodluzování 2D", "price": "800" },
@@ -146,5 +130,21 @@
       }
     },
     "other": "*Ceny jsou orientační, odvíjí se od spotřeby materiálu."
+  },
+  {
+    "name": "Tetiana Trach",
+    "specialization": "Nezávislá kosmetická poradkyně, <br/> vizážistka společnosti \"Mary Kay\"",
+    "photoIndex": "trach",
+    "contacts": { "phone": "+420774049282", "email": "" },
+    "socials": { "fb": "", "instagram": "", "tiktok": "" },
+    "price_list": {
+      "kosm_konzultace": {
+        "name": "Kosmetické konzultace",
+        "services": [
+          { "name": "Kosmetická konzultace", "price": "ceník na vyžádání" }
+        ]
+      }
+    },
+    "other": ""
   }
 ]
