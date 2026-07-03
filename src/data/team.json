@@ -71,7 +71,7 @@
   },
   {
     "name": "Valeriia Kropaleva",
-    "specialization": "Blond & Hair Extensions Expert",
+    "specialization": "Kadeřnice, specialistka na prodloužení vlasů",
     "photoIndex": "kropaleva",
     "contacts": { "phone": "+420776709176", "email": "" },
     "socials": {
@@ -112,19 +112,19 @@
       "rasove_sluzby": {
         "name": "Řasy a obočí",
         "services": [
-          { "name": "Prodluzování 1D", "price": "700" },
-          { "name": "Prodluzování 2D", "price": "800" },
-          { "name": "Prodluzování 3D", "price": "900" },
-          { "name": "Prodluzování 4D", "price": "1000" },
-          { "name": "Prodluzování 5D", "price": "1100" },
+          { "name": "Prodluzování 1D", "price": "800" },
+          { "name": "Prodluzování 2D", "price": "900" },
+          { "name": "Prodluzování 3D", "price": "1000" },
+          { "name": "Prodluzování 4D", "price": "1100" },
+          { "name": "Prodluzování 5D", "price": "1200" },
           { "name": "Odstranění práce jiného stylisty", "price": "100" },
           { "name": "Přechod / mokré řasy (wet effect)", "price": "100" },
-          { "name": "Barvení obočí", "price": "200" },
-          { "name": "Barvení obočí a korekce", "price": "300" },
-          { "name": "Laminace obočí + barvení + korekce", "price": "500" },
+          { "name": "Barvení obočí", "price": "300" },
+          { "name": "Barvení obočí a korekce", "price": "400" },
+          { "name": "Laminace obočí + barvení + korekce", "price": "600" },
           {
             "name": "Depilace voskem nad horním rtem / obočí (jedna zóna)",
-            "price": "100"
+            "price": "200"
           }
         ]
       }
