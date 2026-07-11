@@ -1,5 +1,5 @@
-const navLinksEls = document.querySelectorAll(".nav__link");
-const sectionsEls = document.querySelectorAll("section");
+const navLinksEls = document.querySelectorAll<HTMLAnchorElement>(".nav__link");
+const sectionsEls = document.querySelectorAll<HTMLDivElement>("section");
 
 const linkClassName = "nav__link";
 const activeLinkClassName = "active";
@@ -7,45 +7,32 @@ const activeLinkClassName = "active";
 export function switchNavLinkInScrolling() {
   let currentSectionId = "";
 
-  sectionsEls.forEach((el) => {
-    if (scrollY >= el.offsetTop - 200) {
-      currentSectionId = el.getAttribute("id");
+  const currentScrollY = window.scrollY;
+
+  sectionsEls.forEach((section) => {
+    if (currentScrollY >= section.offsetTop - 200) {
+      currentSectionId = section.id;
     }
   });
 
-  navLinksEls.forEach((el) => {
-    if (
-      !el.classList.value.includes(activeLinkClassName) &&
-      el.dataset.nav === currentSectionId
-    ) {
-      el.classList.add(activeLinkClassName);
-    }
-
-    if (el.dataset.nav !== currentSectionId) {
-      el.classList.remove(activeLinkClassName);
-    }
+  navLinksEls.forEach((link) => {
+    link.classList.toggle(
+      activeLinkClassName,
+      link.dataset.nav === currentSectionId,
+    );
   });
 }
 
-export function switchCurrentNavLink(event) {
-  const elClasses = event.target.classList.value;
+export function switchCurrentNavLink(event: Event) {
+  const target = event.target as HTMLElement;
 
-  if (elClasses.includes(linkClassName)) {
-    const currentLink = event.target.dataset.nav;
-    navLinksEls.forEach((el) => {
-      if (
-        el.dataset.nav === currentLink &&
-        !el.classList.value.includes(activeLinkClassName)
-      ) {
-        el.classList.add(activeLinkClassName);
-      }
-
-      if (
-        el.dataset.nav !== currentLink &&
-        el.classList.value.includes(activeLinkClassName)
-      ) {
-        el.classList.remove(activeLinkClassName);
-      }
-    });
+  if (!target.classList.contains(linkClassName)) {
+    return;
   }
+
+  const currentLink = target.dataset.nav;
+
+  navLinksEls.forEach((el) => {
+    el.classList.toggle(activeLinkClassName, el.dataset.nav === currentLink);
+  });
 }

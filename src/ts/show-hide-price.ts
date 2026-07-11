@@ -4,33 +4,33 @@ const btnTitleIfFalse = "zobrazit informace";
 const btnTextIfTrue = "Skrýt info";
 const btnTitleIfTrue = "skrýt informace";
 
-export function showHidePrice(id) {
-  const masterEls = document.querySelectorAll(".master-container");
+export function showHidePrice(id: string) {
+  const el = [
+    ...document.querySelectorAll<HTMLElement>(".master-container"),
+  ].find((el) => el.dataset.id === id);
 
-  masterEls.forEach((el) => {
-    if (el.dataset.id === id) {
-      toggleContent(el);
-      return;
-    }
-  });
+  if (el) {
+    toggleContent(el);
+  }
 }
 
-function toggleContent(el) {
-  const cardEl = el.querySelector(".master-card");
-  const priceListEl = el.querySelector(".price-list");
-  const btnEl = el.querySelector(".show-info-btn");
-  const btnTextEl = el.querySelector(".show-info-btn__text");
-  const svgEl = el.querySelector(".show-info-btn__icon");
+function toggleContent(el: Element) {
+  const cardEl = el.querySelector<HTMLElement>(".master-card");
+  const priceListEl = el.querySelector<HTMLElement>(".price-list");
+  const btnEl = el.querySelector<HTMLElement>(".show-info-btn");
+  const btnTextEl = el.querySelector<HTMLElement>(".show-info-btn__text");
+  const svgEl = el.querySelector<HTMLElement>(".show-info-btn__icon");
 
-  cardEl.classList.toggle("active");
-  priceListEl.classList.toggle("active");
-  svgEl.classList.toggle("active");
-
-  if (btnTextEl.textContent === btnTextIfFalse) {
-    btnEl.title = btnTitleIfTrue;
-    btnTextEl.textContent = btnTextIfTrue;
-  } else {
-    btnEl.title = btnTitleIfFalse;
-    btnTextEl.textContent = btnTextIfFalse;
+  if (!cardEl || !priceListEl || !btnEl || !btnTextEl || !svgEl) {
+    return;
   }
+
+  const showPriceList = !priceListEl.classList.contains("active");
+
+  cardEl.classList.toggle("active", !showPriceList);
+  priceListEl.classList.toggle("active", showPriceList);
+  svgEl.classList.toggle("active", showPriceList);
+
+  btnEl.title = showPriceList ? btnTitleIfTrue : btnTitleIfFalse;
+  btnTextEl.textContent = showPriceList ? btnTextIfTrue : btnTextIfFalse;
 }
