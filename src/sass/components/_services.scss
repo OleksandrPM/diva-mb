@@ -23,7 +23,7 @@
   align-items: center;
 }
 
-.service {
+.service-title {
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 20px;
@@ -44,7 +44,6 @@
     color: var.$active-color;
     text-shadow: 0 0 5px var.$active-color;
     transform: scaleY(1.2);
-    outline: none;
   }
 }
 
@@ -91,6 +90,16 @@
   & tr {
     display: flex;
     width: 100%;
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: var.$active-color;
+      text-shadow: 0 0 5px var.$active-color;
+      transform: scaleY(1.2);
+    }
   }
 
   & .name-column {
