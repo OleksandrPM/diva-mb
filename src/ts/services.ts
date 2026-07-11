@@ -1,42 +1,42 @@
-import serviceList from "../data/service-list.json";
-import { modalContentEl } from "./modal";
-import { icons } from "../images";
+import { services } from "../data/services.data";
+import { icons } from "./images";
 
-const servicesModalTitle = "Vyberte službu:";
-
-const modalTitleEl = document.querySelector(".modal__title");
-
-export function renderServices() {
-  modalTitleEl.textContent = servicesModalTitle;
-  const serviceListKeys = Object.keys(serviceList);
-  const items = serviceListKeys
+export function buildServiceList(): string {
+  const serviceKeys = Object.keys(services) as (keyof typeof services)[];
+  const items = serviceKeys
     .map((key) => {
-      const { name, services } = serviceList[key];
-      return buildServiceItem(key, name, services);
+      const { name, prices } = services[key];
+      return buildServiceItem(key, name, prices);
     })
     .join("");
-  const servicesList = `<ul class='services'>${items}</ul>`;
 
-  modalContentEl.innerHTML = servicesList;
+  return `<ul class='services'>${items}</ul>`;
 }
 
-function buildServiceItem(key, name, services) {
+function buildServiceItem(
+  key: keyof typeof services,
+  name: (typeof services)[typeof key]["name"],
+  prices: (typeof services)[typeof key]["prices"],
+): string {
   return `<li class='services__item' data-service="${key}">
             <div class="services__item-head">
-              <button type="button" class='service js-service-name' data-service="${key}">
+              <h3 class='service-title js-service-title' data-service="${key}">
               ${name}
-              </button>
+              </h3>
               ${buildShowMoreBtn(key)}
             </div>
-            ${buildPriceTable(key, services)}
+            ${buildPriceTable(key, prices)}
           </li>`;
 }
 
-function buildPriceTable(key, services) {
+function buildPriceTable(
+  key: keyof typeof services,
+  prices: (typeof services)[typeof key]["prices"],
+): string {
   return `<table class="services__table" data-service="${key}">
-            <tbody>${services
+            <tbody>${prices
               .map(({ name, price }) => {
-                return `<tr>
+                return `<tr class="js-subservice" data-subservice="${name}">
                   <td class="name-column">${name}</td>
                   <td class="price-column">${price}</td>
                 </tr>`;
@@ -46,7 +46,7 @@ function buildPriceTable(key, services) {
           </table>`;
 }
 
-function buildShowMoreBtn(key) {
+function buildShowMoreBtn(key: keyof typeof services): string {
   return `<button
       class="button services__show-more-btn js-services-show-more"
       data-service="${key}"

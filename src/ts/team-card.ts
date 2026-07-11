@@ -1,26 +1,31 @@
 import { nanoid } from "nanoid";
-import { teamAvatar, icons } from "../images";
+import { teamAvatar, icons } from "./images";
 import { buildSocialsList } from "./socials-icons";
+import { MemberPrices, TeamMemberWithPhoto } from "../types/team.types";
+import { ServiceName } from "../types/services.types";
 
-export default function buildMasterContainer(master) {
+export default function buildMasterContainer(
+  master: TeamMemberWithPhoto,
+): string {
   const {
-    contacts: { phone },
+    contacts: { phone: phoneNumber },
+    price_list: priceList,
   } = master;
   const id = nanoid(10);
 
   return `<div class="master-container" data-id="${id}">
             <div class="master-container__content">
               ${buildMasterCard(master, id)}
-              ${buildPriceList(master, id)}
+              ${buildPriceList(priceList, id)}
             </div>
            ${buildShowInfoBtn(id)}
-           ${buildCallmeBtn(phone)}
+           ${phoneNumber ? buildCallmeBtn(phoneNumber) : ""}
           </div>`;
 }
 
-function buildMasterCard(master, id) {
+function buildMasterCard(master: TeamMemberWithPhoto, id: string) {
   const {
-    photo: { def, x1: norm, x2: retina },
+    photo_set: { def, x1: norm, x2: retina },
     name,
     specialization,
     socials,
@@ -29,10 +34,10 @@ function buildMasterCard(master, id) {
   return `<div class="master-card active" data-id="${id}">
     <div class="master-card__img-container">
       <img class="master-card__image"
-        srcset="${norm ? norm : teamAvatar} 1x, ${
-    retina ? retina : teamAvatar
-  } 2x"
         src="${def ? def : teamAvatar}"
+        srcset="${norm ? norm : teamAvatar} 1x, ${
+          retina ? retina : teamAvatar
+        } 2x"
         alt="Photo of ${name}"
         loading="lazy"
       />
@@ -43,20 +48,31 @@ function buildMasterCard(master, id) {
   </div>`;
 }
 
-function buildPriceList(master, id) {
-  const { price_list: priceList, other: info } = master;
+function buildPriceList(priceList: MemberPrices, id: string): string {
+  const { services, add_info: info } = priceList;
 
-  const services = Object.keys(priceList);
+  if (!services) {
+    return "";
+  }
 
-  const pricesMarkup = services
-    .map((service) => {
-      const { name, services } = priceList[service];
+  const serviceKeys = Object.keys(services) as (keyof ServiceName)[];
+
+  const pricesMarkup = serviceKeys
+    .map((serviceKey) => {
+      const service = services[serviceKey];
+
+      if (!service) {
+        return "";
+      }
+
+      const { name, prices } = service;
+
       return `<h3 class="price-list__title">${name}</h3>
       <table>
         <thead>
           <tr><th>Služba</th><th class="t-column-price">Cena, Kč</th></tr>
         </thead>
-        <tbody>${services
+        <tbody>${prices
           .map(({ name, price }) => {
             return `<tr><td>${name}</td><td>${price}</td></tr>`;
           })
@@ -72,19 +88,15 @@ function buildPriceList(master, id) {
   </div>`;
 }
 
-function buildCallmeBtn(phone) {
-  if (phone) {
-    return ` <a href="tel:${phone}" class="button phone-btn" title="zavolat">
+function buildCallmeBtn(phoneNumber: string) {
+  return ` <a href="tel:${phoneNumber}" class="button phone-btn" title="zavolat">
     <svg class="phone-icon" viewBox="0 0 32 32" width="32" height="32" >
     <use href="${icons}#icon-phone"></use>
     </svg>
     </a>`;
-  } else {
-    return "";
-  }
 }
 
-function buildShowInfoBtn(id) {
+function buildShowInfoBtn(id: string) {
   return `<button 
   class="button show-info-btn js-show-info" 
   type="button"
