@@ -1,6 +1,49 @@
-import { Price, Services } from "../types/services.types";
+import { Price, ServiceKey, Services } from "../types/services.types";
 
-// Price lists for each service
+/* For every service must be defined a pair key-name in SERVICE_NAMES. */
+export const SERVICE_NAMES = {
+  kadern_sluzby: "Kadeřnické služby",
+  rasove_sluzby: "Řasy a obočí",
+  kosm_konzultace: "Kosmetické konzultace",
+} as const;
+
+/* Must contain all subservice names. */
+export const SUB_SERVICE_NAMES: {
+  [K in ServiceKey]: readonly string[];
+} = {
+  kadern_sluzby: [
+    "Dámský střih (kompletní služba)",
+    "Foukaná",
+    "Barva",
+    "Melír",
+    "Balayage",
+    "Airtouch",
+    "Dekolorace (stahování barvy)",
+    'Ošetření "RESTRUCTURE"',
+    "Smoothing system (nová metoda vyhlazení vlasů)",
+    "Natáčení vlasů",
+    "Společensky účes",
+    "Pánský střih",
+    "Dětský střih",
+    "Prodlužování vlasů",
+  ],
+  rasove_sluzby: [
+    "Prodluzování 1D",
+    "Prodluzování 2D",
+    "Prodluzování 3D",
+    "Prodluzování 4D",
+    "Prodluzování 5D",
+    "Odstranění práce jiného stylisty",
+    "Přechod / mokré řasy (wet effect)",
+    "Barvení obočí",
+    "Barvení obočí a korekce",
+    "Laminace obočí + barvení + korekce",
+    "Depilace voskem nad horním rtem / obočí (jedna zóna)",
+  ],
+  kosm_konzultace: ["Kosmetická konzultace"],
+} as const;
+
+/* Price lists for each service. Should not include all sub-services. */
 export const PriceListKadernSluzby: Price<"kadern_sluzby">[] = [
   {
     name: "Dámský střih (kompletní služba)",
@@ -74,8 +117,8 @@ export const PriceListKosmKonzultace: Price<"kosm_konzultace">[] = [
   },
 ];
 
-/* The services object contains all the services with their names and price lists.
-The order of services in the object determines the order in which they are displayed. */
+/* The services object contains all services with their names and price lists.
+The order of services in this object determines the order in which they are displayed. */
 export const services: Services = {
   kadern_sluzby: {
     name: "Kadeřnické služby",

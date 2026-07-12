@@ -81,6 +81,9 @@ export function onDocumentClick(event: MouseEvent): void {
 
   if (target.classList.contains("js-show-info")) {
     const id = target.dataset.id;
+
+    if (!id) return;
+
     showHidePrice(id);
     return;
   }
