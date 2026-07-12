@@ -1,6 +1,6 @@
 {
   "name": "diva-mb",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "type": "module",
@@ -8,7 +8,7 @@
   "author": "olekspm <olekspm.dev@gmail.com>",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build src/*.html --public-url /diva-mb/"
+    "build": "parcel build src/*.html --public-url /diva-mb/ && shx cp -r public/* dist/"
   },
   "devDependencies": {
     "@parcel/compressor-brotli": "^2.16.4",
@@ -24,6 +24,7 @@
     "posthtml-include": "^1.7.4",
     "process": "^0.11.10",
     "sharp": "^0.33.5",
+    "shx": "^0.4.0",
     "typescript": "^7.0.2"
   },
   "dependencies": {
