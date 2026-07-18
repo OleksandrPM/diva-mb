@@ -8,7 +8,8 @@
   "author": "olekspm <olekspm.dev@gmail.com>",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build src/*.html --public-url /diva-mb/ && shx cp -r public/* dist/"
+    "build": "parcel build src/*.html && shx cp -r public/* dist/",
+    "build:gh-pages": "parcel build src/*.html --public-url /diva-mb/ && shx cp -r public/* dist/"
   },
   "devDependencies": {
     "@parcel/compressor-brotli": "^2.16.4",
