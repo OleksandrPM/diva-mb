@@ -1,4 +1,4 @@
-import { TeamMemberKey, teamMemberNames } from "../data/team.data";
+import { TeamMemberKey } from "../data/team.data";
 import { TeamPhotoSet } from "../types/team.types";
 
 export const icons = new URL("../assets/images/icons.svg", import.meta.url)
