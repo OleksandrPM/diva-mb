@@ -8,9 +8,7 @@ export const SERVICE_NAMES = {
 } as const;
 
 /* Must contain all subservice names. */
-export const SUB_SERVICE_NAMES: {
-  [K in ServiceKey]: readonly string[];
-} = {
+export const SUB_SERVICE_NAMES = {
   kadern_sluzby: [
     "Dámský střih (kompletní služba)",
     "Foukaná",
@@ -41,7 +39,7 @@ export const SUB_SERVICE_NAMES: {
     "Depilace voskem nad horním rtem / obočí (jedna zóna)",
   ],
   kosm_konzultace: ["Kosmetická konzultace"],
-} as const;
+} as const satisfies Record<ServiceKey, readonly string[]>;
 
 /* Price lists for each service. Should not include all sub-services. */
 export const PriceListKadernSluzby: Price<"kadern_sluzby">[] = [
