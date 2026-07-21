@@ -4,6 +4,7 @@ export const teamMemberNames = {
   volfova: "Iryna Volfova",
   ahrenic: "Marina Ahrenič",
   kropaleva: "Valeriia Kropaleva",
+  stepi: "Violet Stepi",
   orel: "Yelyzaveta Orel",
   trach: "Tetiana Trach",
 } as const;
@@ -164,12 +165,50 @@ const trach: TeamMember = {
   },
 };
 
+const stepi: TeamMember = {
+  id: "stepi",
+  name: "Violet Stepi",
+  specialization: "Kadeřnice / Vizážistka / <br/>Kosmetická poradkyně",
+  contacts: { phone: "+420739126787", email: "ucesaliceni@gmail.com" },
+  socials: {
+    fb: "https://www.facebook.com/profile.php?id=61590880675348",
+    instagram: "https://www.instagram.com/violet_stepi/",
+  },
+  price_list: {
+    services: {
+      kadern_sluzby: {
+        name: "Kadeřnické služby",
+        prices: [
+          { name: "Dámský střih (kompletní služba)", price: "800 - 1200" },
+          { name: "Foukaná", price: "400 - 700" },
+          { name: "Barva", price: "1600 - 2000" },
+          { name: "Melír", price: "1850 - 3200" },
+          { name: "Balayage", price: "2890 - 5000" },
+          { name: "Airtouch", price: "3000 - 6000" },
+          { name: "Dekolorace (stahování barvy)", price: "od 2000" },
+          { name: 'Ošetření "RESTRUCTURE"', price: "800 - 1500" },
+          {
+            name: "Smoothing system (nová metoda vyhlazení vlasů)",
+            price: "2200 - 3000",
+          },
+          { name: "Natáčení vlasů", price: "od 500" },
+          { name: "Společensky účes", price: "1500 - 2700" },
+          { name: "Pánský střih", price: "od 400" },
+          { name: "Dětský střih", price: "od 300" },
+        ],
+      },
+    },
+    add_info: "*Ceny jsou orientační, odvíjí se od spotřeby materiálu.",
+  },
+};
+
 /* Team members array. The order of members in the array is important 
 for the order of display on the website. */
 export const teamMembers: TeamMember[] = [
   volfova,
   ahrenic,
   kropaleva,
+  stepi,
   orel,
   trach,
 ];
