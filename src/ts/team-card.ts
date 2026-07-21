@@ -8,7 +8,7 @@ export default function buildMasterContainer(
   master: TeamMemberWithPhoto,
 ): string {
   const {
-    contacts: { phone: phoneNumber },
+    contacts: { phone: phoneNumber, email },
     price_list: priceList,
   } = master;
   const id = nanoid(10);
@@ -20,6 +20,7 @@ export default function buildMasterContainer(
             </div>
            ${buildShowInfoBtn(id)}
            ${phoneNumber ? buildCallmeBtn(phoneNumber) : ""}
+           ${email ? buildEmailBtn(email) : ""}
           </div>`;
 }
 
@@ -88,8 +89,16 @@ function buildPriceList(priceList: MemberPrices, id: string): string {
   </div>`;
 }
 
+function buildEmailBtn(email: string): string {
+  return `<a href="mailto:${email}" class="button email-btn" title="napsat email">
+    <svg class="email-icon" viewBox="0 0 32 32" width="32" height="32" >
+    <use href="${icons}#icon-envelope"></use>
+    </svg>
+    </a>`;
+}
+
 function buildCallmeBtn(phoneNumber: string) {
-  return ` <a href="tel:${phoneNumber}" class="button phone-btn" title="zavolat">
+  return `<a href="tel:${phoneNumber}" class="button phone-btn" title="zavolat">
     <svg class="phone-icon" viewBox="0 0 32 32" width="32" height="32" >
     <use href="${icons}#icon-phone"></use>
     </svg>
