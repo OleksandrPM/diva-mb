@@ -4,7 +4,7 @@ export const teamMemberNames = {
   volfova: "Iryna Volfova",
   ahrenic: "Marina Ahrenič",
   kropaleva: "Valeriia Kropaleva",
-  stepi: "Violet Stepi",
+  kaniak: "Štěpánka Kaniak",
   orel: "Yelyzaveta Orel",
   trach: "Tetiana Trach",
 } as const;
@@ -165,11 +165,11 @@ const trach: TeamMember = {
   },
 };
 
-const stepi: TeamMember = {
-  id: "stepi",
-  name: "Violet Stepi",
+const kaniak: TeamMember = {
+  id: "kaniak",
+  name: "Štěpánka Kaniak",
   specialization: "Kadeřnice / Vizážistka / <br/>Kosmetická poradkyně",
-  contacts: { phone: "+420739126787", email: "ucesaliceni@gmail.com" },
+  contacts: { phone: "+420793996799", email: "ucesaliceni@gmail.com" },
   socials: {
     fb: "https://www.facebook.com/profile.php?id=61590880675348",
     instagram: "https://www.instagram.com/violet_stepi/",
@@ -208,7 +208,7 @@ export const teamMembers: TeamMember[] = [
   volfova,
   ahrenic,
   kropaleva,
-  stepi,
+  kaniak,
   orel,
   trach,
 ];

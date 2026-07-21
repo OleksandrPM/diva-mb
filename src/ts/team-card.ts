@@ -90,7 +90,7 @@ function buildPriceList(priceList: MemberPrices, id: string): string {
 }
 
 function buildEmailBtn(email: string): string {
-  return `<a href="mailto:${email}" class="button email-btn" title="napsat email">
+  return `<a href="mailto:${email}" class="button email-btn" title="napsat e-mail">
     <svg class="email-icon" viewBox="0 0 32 32" width="32" height="32" >
     <use href="${icons}#icon-envelope"></use>
     </svg>
