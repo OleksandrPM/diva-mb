@@ -1,12 +1,10 @@
 import { nanoid } from "nanoid";
 import { teamAvatar, icons } from "./images";
 import { buildSocialsList } from "./socials-icons";
-import { MemberPrices, TeamMemberWithPhoto } from "../types/team.types";
+import { MemberPrices, TeamMember } from "../types/team.types";
 import { ServiceName } from "../types/services.types";
 
-export default function buildMasterContainer(
-  master: TeamMemberWithPhoto,
-): string {
+export default function buildMasterContainer(master: TeamMember): string {
   const {
     contacts: { phone: phoneNumber, email },
     price_list: priceList,
@@ -24,13 +22,15 @@ export default function buildMasterContainer(
           </div>`;
 }
 
-function buildMasterCard(master: TeamMemberWithPhoto, id: string) {
+function buildMasterCard(master: TeamMember, id: string) {
   const {
-    photo_set: { def, x1: norm, x2: retina },
     name,
     specialization,
     socials,
+    photo = { def: teamAvatar, x1: teamAvatar, x2: teamAvatar },
   } = master;
+
+  const { def, x1: norm, x2: retina } = photo;
 
   return `<div class="master-card active" data-id="${id}">
     <div class="master-card__img-container">

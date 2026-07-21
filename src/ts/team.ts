@@ -1,6 +1,5 @@
 import { teamMembers } from "../data/team.data";
 import buildMasterContainer from "./team-card";
-import { teamPhotos } from "./images";
 import { TeamMember } from "../types/team.types";
 import { ServiceName, SubServiceName } from "../types/services.types";
 
@@ -76,14 +75,7 @@ function filterBySubService<K extends keyof ServiceName>(
 function buildTeamList(teamMembers: TeamMember[]): string {
   const teamList = teamMembers
     .map((member) => {
-      const photoSet = teamPhotos[member.id];
-
-      const master = {
-        ...member,
-        photo_set: photoSet,
-      };
-
-      return `<li class="team__item">${buildMasterContainer(master)}</li>`;
+      return `<li class="team__item">${buildMasterContainer(member)}</li>`;
     })
     .join("");
 

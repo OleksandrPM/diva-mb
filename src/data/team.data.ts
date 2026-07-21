@@ -1,6 +1,6 @@
 import { TeamMember } from "../types/team.types";
 
-export const teamMemberNames = {
+export const TEAM_MEMBER_NAMES = {
   volfova: "Iryna Volfova",
   ahrenic: "Marina Ahrenič",
   kropaleva: "Valeriia Kropaleva",
@@ -8,10 +8,6 @@ export const teamMemberNames = {
   orel: "Yelyzaveta Orel",
   trach: "Tetiana Trach",
 } as const;
-
-export type TeamMemberName = typeof teamMemberNames;
-
-export type TeamMemberKey = keyof typeof teamMemberNames;
 
 const volfova: TeamMember = {
   id: "volfova",
@@ -44,6 +40,17 @@ const volfova: TeamMember = {
       },
     },
     add_info: "*Ceny jsou orientační, odvíjí se od spotřeby materiálu.",
+  },
+  photo: {
+    def: new URL(
+      "../assets/images/team/volfova.webp?width=350",
+      import.meta.url,
+    ),
+    x1: new URL(
+      "../assets/images/team/volfova.webp?width=350",
+      import.meta.url,
+    ),
+    x2: new URL("../assets/images/team/volfova.webp", import.meta.url),
   },
 };
 
@@ -82,6 +89,17 @@ const ahrenic: TeamMember = {
     },
     add_info: "*Ceny jsou orientační, odvíjí se od spotřeby materiálu.",
   },
+  photo: {
+    def: new URL(
+      "../assets/images/team/ahrenic.webp?width=350",
+      import.meta.url,
+    ),
+    x1: new URL(
+      "../assets/images/team/ahrenic.webp?width=350",
+      import.meta.url,
+    ),
+    x2: new URL("../assets/images/team/ahrenic.webp", import.meta.url),
+  },
 };
 
 const kropaleva: TeamMember = {
@@ -111,6 +129,17 @@ const kropaleva: TeamMember = {
       },
     },
     add_info: "*Ceny jsou orientační, odvíjí se od spotřeby materiálu.",
+  },
+  photo: {
+    def: new URL(
+      "../assets/images/team/kropaleva.webp?width=350",
+      import.meta.url,
+    ),
+    x1: new URL(
+      "../assets/images/team/kropaleva.webp?width=350",
+      import.meta.url,
+    ),
+    x2: new URL("../assets/images/team/kropaleva.webp", import.meta.url),
   },
 };
 
@@ -146,6 +175,11 @@ const orel: TeamMember = {
     },
     add_info: "*Ceny jsou orientační, odvíjí se od spotřeby materiálu.",
   },
+  photo: {
+    def: new URL("../assets/images/team/orel.webp?width=350", import.meta.url),
+    x1: new URL("../assets/images/team/orel.webp?width=350", import.meta.url),
+    x2: new URL("../assets/images/team/orel.webp", import.meta.url),
+  },
 };
 
 const trach: TeamMember = {
@@ -162,6 +196,11 @@ const trach: TeamMember = {
         prices: [{ name: "Kosmetická konzultace", price: "ceník na vyžádání" }],
       },
     },
+  },
+  photo: {
+    def: new URL("../assets/images/team/trach.webp?width=350", import.meta.url),
+    x1: new URL("../assets/images/team/trach.webp?width=350", import.meta.url),
+    x2: new URL("../assets/images/team/trach.webp", import.meta.url),
   },
 };
 
@@ -199,6 +238,14 @@ const kaniak: TeamMember = {
       },
     },
     add_info: "*Ceny jsou orientační, odvíjí se od spotřeby materiálu.",
+  },
+  photo: {
+    def: new URL(
+      "../assets/images/team/kaniak.webp?width=350",
+      import.meta.url,
+    ),
+    x1: new URL("../assets/images/team/kaniak.webp?width=350", import.meta.url),
+    x2: new URL("../assets/images/team/kaniak.webp", import.meta.url),
   },
 };
 
