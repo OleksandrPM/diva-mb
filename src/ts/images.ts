@@ -43,6 +43,11 @@ export const teamPhotos: Record<TeamMemberKey, TeamPhotoSet> = {
     ),
     x2: new URL("../assets/images/team/kropaleva.webp", import.meta.url),
   },
+  stepi: {
+    def: new URL("../assets/images/team/stepi.webp?width=350", import.meta.url),
+    x1: new URL("../assets/images/team/stepi.webp?width=350", import.meta.url),
+    x2: new URL("../assets/images/team/stepi.webp", import.meta.url),
+  },
   orel: {
     def: new URL("../assets/images/team/orel.webp?width=350", import.meta.url),
     x1: new URL("../assets/images/team/orel.webp?width=350", import.meta.url),
