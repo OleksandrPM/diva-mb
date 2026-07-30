@@ -60,7 +60,7 @@ const ahrenic: TeamMember = {
   specialization: "Kadeřnice",
   contacts: { phone: "+420603729585" },
   socials: {
-    fb: "https://www.facebook.com/profile.php?id=100005087111884",
+    facebook: "https://www.facebook.com/profile.php?id=100005087111884",
     instagram: "https://www.instagram.com/marina_vlasy",
   },
   price_list: {
@@ -210,7 +210,7 @@ const kaniak: TeamMember = {
   specialization: "Kadeřnice / Vizážistka / <br/>Kosmetická poradkyně",
   contacts: { phone: "+420793996799", email: "ucesaliceni@gmail.com" },
   socials: {
-    fb: "https://www.facebook.com/profile.php?id=61590880675348",
+    facebook: "https://www.facebook.com/profile.php?id=61590880675348",
     instagram: "https://www.instagram.com/violet_stepi/",
   },
   price_list: {

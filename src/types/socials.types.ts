@@ -1,5 +1,5 @@
 export type Socials = {
-  fb?: string;
+  facebook?: string;
   instagram?: string;
   tiktok?: string;
 };

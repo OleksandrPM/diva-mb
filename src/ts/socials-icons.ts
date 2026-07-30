@@ -2,7 +2,7 @@ import { Socials } from "../types/socials.types";
 import { icons } from "./images";
 
 export const socialsIconId: { [K in keyof Socials]: string } = {
-  fb: "#icon-facebook",
+  facebook: "#icon-facebook",
   instagram: "#icon-instagram",
   tiktok: "#icon-tiktok",
 };
@@ -15,7 +15,7 @@ export function buildSocialsList(socials: Socials): string {
       .map((key) => {
         return `<li><a href="${
           socials[key]
-        }" target="_blank" rel="noopener noreferrer" class="socials__link" title="social">${buildIcon(
+        }" target="_blank" rel="noopener noreferrer" class="socials__link" title="${key}">${buildIcon(
           getIconHref(key),
         )}</a></li>`;
       })
