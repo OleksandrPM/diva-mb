@@ -36,7 +36,7 @@ function buildPriceTable(
   return `<table class="services__table" data-service="${key}">
             <tbody>${prices
               .map(({ name, price }) => {
-                return `<tr class="js-subservice" data-subservice="${name}">
+                return `<tr class="js-subservice" data-subservice="${name.replace(/"/g, "&quot;")}">
                   <td class="name-column">${name}</td>
                   <td class="price-column">${price}</td>
                 </tr>`;
